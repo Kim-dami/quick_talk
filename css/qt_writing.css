@@ -2,8 +2,8 @@
 /*
  ** 프로필 영역 **
           */
-.profile_wrap{position:relative; z-index:100; width:100%; height:auto; padding:15px 0 13px 0;}
-.profile_wrap p{position:relative; width:100%; padding-top:13px; color:#4a4a4a; font-size:13px; text-align:center;}
+.profile_wrap{position:relative; z-index:100; width:100%; height:auto; padding:15px 0 12px 0;}
+.profile_wrap p{position:relative; width:100%; line-height:13px; padding-top:12px; color:#4a4a4a; font-size:13px; text-align:center;}
 
 /* 사진등록 */
 .photo_wrap{position:absolute; top:18px; left:16px; z-index:10; width:65px; height:65px; cursor:pointer;}
