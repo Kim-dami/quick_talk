@@ -52,8 +52,16 @@ td,th {padding:0;}
           */
 .bg_main{background-color:#ff5548;}
 .bg_main_btn{background-color:#4a4a4a;}
+.bg_male{background-color:#27a9d9;}
+.bg_female{background-color:#e6538d;}
+.bg_my{background-color:#5461d7;}
+.bg_dark_purple{background-color:#60649e;}
+.bg_video{background-color:#7c86e9;}
 .fc_female{color:#e6538d;}
 .fc_male{color:#27a9d9;}
+.img_male{border:2px solid #27a9d9; box-sizing:border-box; box-shadow:2px 2px 3px #cddde3;}
+.img_female{border:2px solid #e6538d; box-sizing:border-box; box-shadow:2px 2px 3px #e9d1da;}
+
 	  
 /*
  ** 빠른만남 공통 css **
@@ -64,8 +72,8 @@ td,th {padding:0;}
 .blind{position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
 
 /* 헤더 */
-.hd_main{display:block; width:100%; height:55px;}
-.hd_sub{display:block; width:100%; height:40px;}
+.hd_main{display:block; width:100%; height:55px; line-height:55px;}
+.hd_sub{display:block; width:100%; height:45px; line-height:45px;}
 .hd_fix{position:fixed; top:0; left:0; right:0; z-index:200;}
 .hd_relat{position:relative; z-index:200;}
 .main_logo{position:relative; width:100%; height:100%; line-height:55px; font-size:20px; padding:0px 260px 0px 15px; box-sizing:border-box; color:#fff; font-weight:bold;}
@@ -73,10 +81,10 @@ td,th {padding:0;}
 .main_nav li{position:relative; width:65px; height:100%; float:left;}
 .main_nav .nav_on{background-color:#d92f22;}
 .main_nav li a{display:block; width:100%; height:100%; font-size:13px; line-height:13px; padding-top:33px; box-sizing:border-box; text-align:center; color:#fff; font-weight:bold;}
-.main_nav .nav_talk a{background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_nav_talk.png) no-repeat center 10px; background-size:19px 19px;}
-.main_nav .nav_video a{background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_nav_video.png) no-repeat center 10px; background-size:14px 17px;}
-.main_nav .nav_friend a{background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_nav_friend.png) no-repeat center 10px; background-size:17px 17px;}
-.main_nav .nav_more a{background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_nav_more.png) no-repeat center 18px; background-size:23px 5px;}
+.main_nav .nav_talk a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_talk.png") no-repeat center 10px; background-size:19px 19px;}
+.main_nav .nav_video a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_video.png") no-repeat center 10px; background-size:14px 17px;}
+.main_nav .nav_friend a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_friend.png") no-repeat center 10px; background-size:17px 17px;}
+.main_nav .nav_more a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_more.png") no-repeat center 18px; background-size:23px 5px;}
 @media screen and (max-width:350px){
 	.main_logo{padding:0 220px 0 12px;}
 	.main_nav{width:220px;}
@@ -87,6 +95,11 @@ td,th {padding:0;}
 	.main_nav{width:240px;}
 	.main_nav li{width:60px;}
 }
+.sub_h1{position:relative; width:100%; height:100%; color:#fff; text-align:center; font-size:18px; font-weight:bold;}
+.hd_btn{position:absolute; top:0; z-index:10; width:45px; height:45px;}
+.hd_btn a{display:block; width:100%; height:100%;}
+.hd_btn a:active{background:rgba(0,0,0,0.05);}
+.btn_back{left:0; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_back.png") no-repeat center center; background-size:17px 14px;}
 
 
 /* 상단 영역 */
@@ -95,7 +108,7 @@ td,th {padding:0;}
 .top_section .filter_wrap{position:relative; width:auto; height:40px; padding:5px; box-sizing:border-box; float:left;}
 .top_section .align_filter{width:95px; height:auto; margin-right:5px; float:left;}
 .top_section .gender_filter{width:60px; height:auto; float:left;}
-.top_section select{display:block; width:100%; height:30px; line-height:28px; padding:0 18px 0 6px; border:1px solid #bababa; border-radius:3px; box-sizing:border-box; background-color:#fff; color:#575757; font-size:14px; background-image:url(http://image.club5678.com/imgs/quick_talk/img01/ico_main_slct.png); background-repeat:no-repeat; background-size:8px 5px;}
+.top_section select{display:block; width:100%; height:30px; line-height:28px; padding:0 18px 0 6px; border:1px solid #bababa; border-radius:3px; box-sizing:border-box; background-color:#fff; color:#575757; font-size:14px; background-image:url("http://image.club5678.com/imgs/quick_talk/img01/ico_main_slct.png"); background-repeat:no-repeat; background-size:8px 5px;}
 .top_section .align_filter select{background-position:78px center;}
 .top_section .gender_filter select{background-position:43px center;}
 .top_section .top_btn_wrap{position:relative; width:auto; height:40px; padding:5px; box-sizing:border-box; float:right;}
@@ -103,3 +116,12 @@ td,th {padding:0;}
 .top_section .top_btn:first-of-type{margin-right:5px;}
 .top_section .top_btn a{display:block; width:100%; height:100%; line-height:30px; text-align:center; color:#fff; font-size:14px; font-weight:bold;}
 .top_section .top_btn a:active{background:rgba(0,0,0,0.1);}
+
+/*
+ ** 체크박스 및 라디오버튼 **
+          */
+/* 라디오버튼_01 */
+.radio_lst01{position:relative; width:100%; height:auto; cursor:pointer; overflow:hidden;}
+.radio_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
+.radio_lst01 label{width:100%; height:auto; line-height:25px; padding-left:24px; cursor:pointer; font-size:15px; font-weight:bold; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
+.radio_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
