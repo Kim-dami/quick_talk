@@ -46,6 +46,9 @@
 .color_picker ul{position:relative; width:100%; height:auto; text-align:center;}
 .color_picker li{position:relative; display:inline-block; vertical-align:middle;}
 .color_picker .cp_l{width:17px; height:18px; margin-left:3px; background-repeat:no-repeat; background-position:center; background-size:17px 18px;}
+@media screen and (max-width:350px){
+	.color_picker .cp_l{margin-left:2px;}
+}
 .color_picker .cp_color1{background-image:url("http://image.club5678.com/imgs/quick_talk/img01/ico_color01.png");}
 .color_picker .cp_color2{background-image:url("http://image.club5678.com/imgs/quick_talk/img01/ico_color02.png");}
 .color_picker .cp_color3{background-image:url("http://image.club5678.com/imgs/quick_talk/img01/ico_color03.png");}
