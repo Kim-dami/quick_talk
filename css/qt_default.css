@@ -123,5 +123,5 @@ td,th {padding:0;}
 /* 라디오버튼_01 */
 .radio_lst01{position:relative; width:100%; height:auto; cursor:pointer; overflow:hidden;}
 .radio_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
-.radio_lst01 label{width:100%; height:auto; line-height:30px; padding-left:24px; cursor:pointer; font-size:15px; font-weight:bold; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
+.radio_lst01 label{width:100%; height:auto; line-height:27px; padding-left:24px; cursor:pointer; font-size:15px; font-weight:bold; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
 .radio_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
