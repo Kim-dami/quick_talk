@@ -27,7 +27,7 @@ q:before, q:after {content:''; content:none;}
 dl, menu, ol, ul {margin:0; padding:0;}
 ol,ul,li {list-style:none;}
 nav ul, nav ol {list-style:none; list-style-image:none;}
-button, input, select, textarea {margin:0; font-size:100%; font-family:"맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, Gulim, Helvetica, sans-serif; letter-spacing:-1px; vertical-align:middle; outline:none; appearance:none; -webkit-appearance:none; -o-appearance:none; -moz-appearance:none; -ms-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
+button, input, select, textarea {margin:0; font-size:100%; font-family:"맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, Gulim, Helvetica, sans-serif; vertical-align:middle; outline:none; appearance:none; -webkit-appearance:none; -o-appearance:none; -moz-appearance:none; -ms-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 input::-ms-clear {display:none;}
 select::-ms-expand {display:none;}
 button {overflow:visible; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
@@ -123,5 +123,5 @@ td,th {padding:0;}
 /* 라디오버튼_01 */
 .radio_lst01{position:relative; width:100%; height:auto; cursor:pointer; overflow:hidden;}
 .radio_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
-.radio_lst01 label{width:100%; height:auto; line-height:25px; padding-left:24px; cursor:pointer; font-size:15px; font-weight:bold; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
+.radio_lst01 label{width:100%; height:auto; line-height:30px; padding-left:24px; cursor:pointer; font-size:15px; font-weight:bold; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
 .radio_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
