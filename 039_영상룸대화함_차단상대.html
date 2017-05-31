@@ -14,30 +14,75 @@
 <body ontouchstart="">
 <div id="wrap">
 	<!-- 헤더 -->
-	<div id="header" class="hd_sub hd_fix bg_main">
-		<div class="hd_btn btn_back">
-			<a href="#"><span class="blind">뒤로</span></a>
-		</div>
-		<h1 class="sub_h1">토크룸 대화함</h1>   
+	<div id="header" class="hd_main hd_fix bg_main">
+    	<h1 class="main_logo">빠른만남</h1>
+        <!-- 네비 -->
+        <ul class="main_nav">
+        	<li class="nav_talk">
+            	<a href="#">토크룸</a>
+            </li>
+            <li class="nav_video nav_on">
+            	<a href="#">영상룸</a>
+            </li>
+            <li class="nav_friend">
+            	<a href="#">친구</a>
+            </li>
+            <li class="nav_more">
+            	<a href="#">더보기</a>
+            </li>
+        </ul>
+        <!-- // 네비 -->
     </div>
     <!-- // 헤더 -->
+    <!-- 영상룸 상단 -->
+    <div class="video_header">
+        <div class="my_jewel">
+            <span class="ico_jewel">보석</span>
+            <span class="color_jewel">10000개</span>
+            <div class="btn_white bg_white_btn"><a href="#">내역</a></div>
+            <div class="btn_white bg_white_btn"><a href="#">구매</a></div>
+        </div>
+        <div class="my_point">
+            <span>포인트</span>
+            <span class="color_point">10000점</span>
+            <div class="btn_white fl_r bg_white_btn"><a href="#">교환</a></div>
+        </div>
+    </div>
+    <!-- 영상룸 상단 //-->
     <!-- 상단 영역 -->
-    <div class="top_section top_45">
-		<!-- 상단 선택삭제 -->
-		<div class="slctdel_wrap">
-			<div class="top_chk">
-				<div class="chk_lst02">
-					<input type="checkbox" id="whole_chk">
-					<label for="whole_chk"><span class="blind">전체선택</span></label>
-				</div>
-			</div>
-			<div class="btn_slctdel bg_white_btn">선택삭제</div>
-		</div>
-		<!-- // 상단 선택삭제-->       
+    <div class="top_section top_96">
+    	<!-- 상단 필터 -->
+    	<div class="filter_wrap">
+        	<div class="align_filter">
+                <select class="bg_white_btn">
+                    <option>최근작성순</option>
+                    <option>나와 가까운순</option>
+                    <option>서울지역</option>
+                    <option>경기지역</option>
+                    <option>인천지역</option>
+                    <option>부산지역</option>
+                    <option>대전,충남지역</option>
+                    <option>대구,경북지역</option>
+                    <option>경남,울산지역</option>
+                    <option>광주,전남지역</option>
+                    <option>전북,전주지역</option>
+                    <option>강원,춘천지역</option>
+                    <option>제주,해외지역</option>
+                </select>
+            </div>
+            <div class="gender_filter">
+            	<select class="bg_white_btn">
+                	<option>전체</option>
+                    <option>남성</option>
+                    <option>여성</option>
+                </select>
+            </div>
+        </div>
+        <!-- // 상단 필터 -->
         <!-- 상단 버튼 -->
         <div class="top_btn_wrap">
             <div class="top_btn bg_main_btn">
-                <a href="#">전체리스트</a>
+                <a href="#">대화함</a>
             </div>
             <div class="top_btn bg_main_btn">
                 <a href="#">글쓰기</a>
@@ -46,14 +91,26 @@
         <!-- // 상단 버튼 -->
     </div>
     <!-- // 상단 영역 -->
-    <div id="container" class="mt_87">
-    	<p class="td_notice">※ 매일 04시에 대화내용은 초기화됩니다.</p>
+    <div id="container" class="mt_138">
+    	<div class="vd_tap">
+    		<div class="tap_dial">대화상대</div>
+    		<div class="tap_block bg_video">차단상대</div>
+    	</div>
+    	<div class="vd_slctdel_wrap">
+			<div class="chk_slctdel">
+				<div class="chk_lst02">
+					<input type="checkbox" id="whole_chk">
+					<label for="whole_chk"><span class="blind">전체선택</span></label>
+				</div>
+			</div>
+			<div class="btn_slctdel bg_white_btn">선택해제</div>
+		</div>
     	<!-- 날짜구분 -->
     	<div class="db_day">
     		<h2>2017년 5월 18일</h2>
     		<ul>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -69,22 +126,19 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_male">윤두준(남/29세)</div>
-  							서울분(서울에서 만날 수 있는분만) 연락주세요~^^ 서울분(서울에서 만날 수 있는분만) 연락주세요~^^
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오전 12:10</span>
-  							<div class="td_badge">5</div>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -100,18 +154,15 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_female">배수지(여/24세)</div>
-  							감사합니다. 또 연락줘여
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오후 3:30</span>
-  							<div class="td_badge">2</div>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     		</ul>
@@ -122,7 +173,7 @@
     		<h2>2017년 5월 17일</h2>
     		<ul>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -138,21 +189,19 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_female">이성경(여/28세)</div>
-  							네^^ 만날수있어여
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오전 1:50</span>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -168,21 +217,19 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_female">박수진(여/33세)</div>
-  							감사합니다. 또 연락줘여
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오전 11:11</span>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -198,21 +245,19 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_male">이현우(남/25세)</div>
-  							연락주세요~^^
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오후 12:29</span>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     			<li>
-    				<a href="#" class="td_a">
+    				<a href="#" class="block_a">
     					<!-- 개별 체크박스 -->
 						<div class="td_chk">
 							<div class="chk_lst02">
@@ -228,18 +273,15 @@
 							</div>
 						</div>
   						<!-- // 상대 사진 -->
-  						<!-- 토크룸 대화 -->
-  						<div class="dial_box">
+  						<!-- 영상룸 대화 -->
+  						<div class="block_box">
   							<div class="fc_male">박서준(남/30세)</div>
-  							넵넵
+  							<div class="db_loca">경남>창원시 마산합포구</div>
   						</div>
-  						<!-- // 토크룸 대화 -->
-  						<!-- 시간 및 뱃지 -->
-  						<div class="badge_box">
-  							<span class="td_time">오후 12:29</span>
-  							<div class="td_badge">1</div>
-  						</div>
-  						<!-- // 시간 및 뱃지 -->
+  						<!-- // 영상룸 대화 -->
+  						<!-- 버튼 및 뱃지 -->
+  						<div class="btn_block">해제</div>
+  						<!-- // 버튼 및 뱃지 -->
    					</a>
     			</li>
     		</ul>

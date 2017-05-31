@@ -2,9 +2,7 @@
 body{background-color:#e7e7e7}
 #container{margin-top:97px;}
 
-/*
- ** 토크룸 리스트 css **
-          */
+/******************** 토크룸 리스트 css ********************/
 .talk_u{position:relative; width:100%; height:auto; padding:5px; box-sizing:border-box;}
 .talk_u li{position:relative; width:100%; margin-top:4px;}
 .talk_u li:first-of-type{margin-top:0px;}
@@ -54,9 +52,7 @@ body{background-color:#e7e7e7}
 /* 배너 */
 .talk_u .list_banner{height:60px; background-color:#ffc868;}
 
-/*
- ** 플로팅 버튼 **
-          */
+/******************** 플로팅 버튼 ********************/
 .float_wrap{position:fixed; right:10px; bottom:50px; z-index:300; width:50px; height:auto;}
 .float_bg_modal{display:none; position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
 .float_btn {position:relative; width:50px; height:50px; border-radius:100%; background:#ff5548 url("http://image.club5678.com/imgs/quick_talk/img01/ico_floating.png") no-repeat center center; background-size:20px 20px; box-shadow:1px 2px 6px rgba(0,0,0,0.3); transition:0.2s transform ease-in-out; cursor:pointer;}

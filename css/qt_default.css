@@ -66,7 +66,7 @@ td,th {padding:0;}
 /*
  ** 빠른만남 공통 css **
           */
-#wrap{position:relative; width:100%; height:100%; overflow-y:auto; overflow-x:auto;}
+#wrap{position:relative; width:100%; height:100%; overflow-y:auto; overflow-x:hidden;}
 #container{position:relative; width:100%; height:auto;}
 .hidden{display:none;}
 .blind{position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
@@ -116,6 +116,26 @@ td,th {padding:0;}
 .top_section .top_btn:first-of-type{margin-right:5px;}
 .top_section .top_btn a{display:block; width:auto; height:100%; line-height:30px; padding:0 12px; text-align:center; color:#fff; font-size:14px; font-weight:bold;}
 .top_section .top_btn a:active{background:rgba(0,0,0,0.1);}
+
+/* 영상룸 상단_보석포인트정보 */
+.video_header{position:fixed; width:100%; height:auto; top:55px; left:0; right:0; z-index:200; border-bottom:1px solid #bababa; background:#ececec; overflow:auto;}
+.video_header .my_jewel{float:left; width:auto; height:auto; margin-left:4px; font-size:13px; font-weight:bold;}
+.video_header .my_jewel span.ico_jewel{float:left; padding-right:18px; margin-right:3px; background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_jewel.png) right center no-repeat; background-size:15px 13px; line-height:40px;}
+.video_header .my_jewel span.color_jewel{float:left; color:#f97895; line-height:40px;}
+.video_header .my_point{float:right; width:auto; margin-right:4px; height:auto; font-size:13px; font-weight:bold; line-height:40px;}
+.video_header .my_point span{float:left; margin-right:3px;}
+.video_header .my_point span.color_point{margin-right:0; color:#9f9dff; line-height:40px;}
+.video_header .btn_white{float:right; position:relative; width:36px; height:28px; margin:6px 0; margin-left:3px;}
+.video_header .btn_white a{display:block; width:100%; height:100%; border-radius:3px; line-height:26px; text-align:center; font-size:13px; font-weight:bold; box-sizing:border-box;}
+.video_header .btn_white a:active{background:#f7f7f7;}
+
+@media(min-width:360px){
+.video_header .my_jewel{margin-left:6px; font-size:14px;}
+.video_header .my_point{margin-right:6px; font-size:14px;}
+.video_header .my_jewel span.ico_jewel{margin-right:4px;}
+.video_header .btn_white{width:42px; margin-left:4px;}
+.video_header .btn_white a{font-size:14px;}
+}
 
 /*
  ** 체크박스 및 라디오버튼 **

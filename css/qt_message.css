@@ -1,46 +1,74 @@
-.mt_97{margin-top:97px;}
+.mt_87{margin-top:87px;}
+.mt_138{margin-top:138px;}
+.top_45{top:45px;}
+.top_96{top:96px;}
 
-/*
- ** 상단 영역 **
-          */
-.top_section{top:45px;}
+/******************** 상단 영역 ********************/
 .top_section .slctdel_wrap{position:relative; width:auto; height:40px; float:left;}
 .top_section .top_chk{position:relative; width:40px; height:100%; padding:10px; box-sizing:border-box; float:left;}
 .top_section .btn_slctdel{position:relative; width:70px; height:30px; line-height:30px; margin-top:5px; float:left; color:#575757; text-align:center; font-size:14px; font-weight:bold; cursor:pointer;}
 .top_section .btn_slctdel:active{background:#f7f7f7;}
 
-/*
- ** 토크룸 대화함 css **
-          */
-.td_notice{position:relative; width:100%; height:auto; line-height:18px; padding:0 0 7px 10px; box-sizing:border-box; color:#787878; font-size:14px; font-weight:bold;}
+/******************** 대화함 공통 css *********************/
+.db_day .fc_male, .db_day .fc_female{width:100%; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.db_day .db_loca{width:100%; padding-left:10px; box-sizing:border-box; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_main_loca.png") no-repeat left center; background-size:8px 11px; color:#535359; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 
 /* 날짜 구분 */
-.td_day_box{position:relative; width:100%; height:auto;}
-.td_day_box:first-of-type{border-top:1px solid #d1d1d1;}
-.td_day_box h2{position:relative; width:100%; height:30px; line-height:30px; background-color:#f2f2f2; color:#686868; text-align:center; font-size:14px; font-weight:bold;}
-.td_day_box ul{position:relative; width:100%; height:auto; background-color:#fff;}
-.td_day_box li{position:relative; width:100%; height:auto; border-bottom:1px solid #d1d1d1;}
-.td_day_box li a{display:block; position:relative; width:100%; height:71px; padding:13px 80px 13px 111px; box-sizing:border-box;}
-.td_day_box li a:active{background:rgba(0,0,0,0.1);}
+.db_day{position:relative; width:100%; height:auto;}
+.db_day:first-of-type{border-top:1px solid #d1d1d1;}
+.db_day h2{position:relative; width:100%; height:30px; line-height:30px; background-color:#f2f2f2; color:#686868; text-align:center; font-size:14px; font-weight:bold;}
+.db_day ul{position:relative; width:100%; height:auto; background-color:#fff;}
+.db_day li{position:relative; width:100%; height:auto; border-bottom:1px solid #d1d1d1;}
+.db_day li a{display:block; position:relative; width:100%; height:71px; box-sizing:border-box;}
 
 /* 개별 체크박스 */
-.td_day_box .td_chk{position:absolute; top:0; left:0px; width:40px; height:100%; padding:25px 10px; box-sizing:border-box;}
+.db_day .td_chk{position:absolute; top:0; left:0px; width:40px; height:100%; padding:25px 10px; box-sizing:border-box;}
 
 /* 상대 사진 */
-.td_day_box .photo_wrap{position:absolute; top:0; left:40px; width:71px; height:100%; padding:7px; box-sizing:border-box;}
-.td_day_box .photo_clip{width:100%; height:100%; border-radius:100%; overflow:hidden;}
-.td_day_box .photo_clip img{display:block; width:100%; height:100%;}
+.db_day .photo_wrap{position:absolute; top:0; left:40px; width:71px; height:100%; padding:7px; box-sizing:border-box;}
+.db_day .photo_clip{width:100%; height:100%; border-radius:100%; overflow:hidden;}
+.db_day .photo_clip img{display:block; width:100%; height:100%;}
 
-/* 대화함 */
-.td_day_box .dial_box{width:100%; height:100%; line-height:22px; color:#535359; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-.td_day_box .fc_male, .td_day_box .fc_female{width:100%; height:22px; line-height:22px; padding-bottom:1px; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+/* 내역 없음 */
+.exclam_none{position:relative; width:100%; height:30px; line-height:30px; padding-top:200px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_exclam.png") no-repeat center 90px; background-size:91px 91px; color:#787878; text-align:center; font-size:17px; font-weight:bold;}
+
+/******************** 토크룸 대화함 css ********************/
+.td_notice{position:relative; width:100%; height:auto; line-height:18px; padding:10px 0 7px 10px; box-sizing:border-box; color:#787878; font-size:14px; font-weight:bold;}
+.db_day .td_a{padding:13px 80px 13px 111px;}
+
+/* 토크룸 대화 */
+.td_a .dial_box{width:100%; height:100%; line-height:22px; color:#535359; font-size:14px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.td_a .fc_male, .td_a .fc_female{height:22px; line-height:22px; padding-bottom:1px;}
 
 /* 시간 및 뱃지 */
-.td_day_box .badge_box{position:absolute; top:0; right:0px; width:80px; height:100%; padding:0 10px 41px 5px; box-sizing:border-box; text-align:center;}
-.td_day_box .td_time{line-height:30px; color:#8a8a8a; font-size:13px; font-weight:bold;}
-.td_day_box .td_badge{position:absolute; top:33px; left:30px; width:23px; height:23px; line-height:23px; border-radius:100%; background-color:#ff5548; color:#fff; text-align:center; font-size:13px; font-weight:bold;}
+.td_a .badge_box{position:absolute; top:0; right:0px; width:80px; height:100%; padding:0 10px 41px 5px; box-sizing:border-box; text-align:center;}
+.td_a .td_time{line-height:30px; color:#8a8a8a; font-size:13px; font-weight:bold;}
+.td_a .td_badge{position:absolute; top:33px; left:30px; width:23px; height:23px; line-height:23px; border-radius:100%; background-color:#ff5548; color:#fff; text-align:center; font-size:13px; font-weight:bold;}
 
-/*
- ** 내역 없음 **
-          */
-.exclam_none{position:relative; width:100%; height:30px; line-height:30px; padding-top:190px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_exclam.png") no-repeat center 80px; background-size:91px 91px; color:#787878; text-align:center; font-size:17px; font-weight:bold;}
+
+/******************** 영상룸 대화함 css ********************/
+.vd_tap{position:relative; width:100%; height:35px; line-height:35px;}
+.vd_tap > div{width:50%; height:100%; border-bottom:2px solid #7c86e9; float:left; box-sizing:border-box; color:#777777; text-align:center; font-size:15px; font-weight:bold; cursor:pointer;}
+.vd_tap .bg_video{color:#fff;}
+
+.vd_slctdel_wrap{position:relative; width:100%; height:40px; line-height:40px; border-bottom:1px solid #d1d1d1;}
+.vd_slctdel_wrap .chk_slctdel{position:relative; width:40px; height:100%; padding:10px; box-sizing:border-box; float:left;}
+.vd_slctdel_wrap .btn_slctdel{position:relative; width:70px; height:30px; line-height:30px; margin-top:5px; float:left; color:#575757; text-align:center; font-size:14px; font-weight:bold; cursor:pointer;}
+.vd_slctdel_wrap .btn_slctdel:active{background:#f7f7f7;}
+
+.db_day .vd_a{padding:7px 88px 7px 111px;}
+.db_day .block_a{padding:13px 88px 13px 111px;}
+
+/* 영상룸 대화 */
+.vd_a .dial_box{width:100%; height:100%; line-height:19px; font-size:14px;}
+.vd_a .video_dial{width:100%; color:#686868; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.vd_a .video_dial img{vertical-align:middle; margin-right:3px;}
+.block_a .block_box{width:100%; height:100%; line-height:22px; font-size:14px;}
+
+/* 버튼 및 뱃지 */
+.vd_a .btn_video{position:absolute; top:18px; right:5px; width:78px; height:34px; line-height:34px; border-radius:17px; color:#fff; text-align:center; font-size:13px; font-weight:bold; cursor:pointer;}
+.vd_a .btn_video:active{top:19px;}
+.vd_a .btn_video img{vertical-align:middle; margin-right:2px;}
+.vd_a .vd_badge{position:absolute; top:-10px; right:-2px; width:22px; height:22px; line-height:22px; border-radius:100%; background-color:#ff5548; color:#fff; text-align:center; font-size:13px; font-weight:bold;}
+.block_a .btn_block{position:absolute; top:18px; right:5px; width:78px; height:34px; line-height:34px; border:1px solid #bababa; border-radius:17px; box-sizing:border-box; color:#575757; background-color:#fff; text-align:center; font-size:13px; font-weight:bold; cursor:pointer;}
+.block_a .btn_block:active{background:#f7f7f7;}
