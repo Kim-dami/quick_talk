@@ -81,7 +81,7 @@
 .block_a .btn_block:active{background:#f7f7f7;}
 
 /* 영상통화 레이어 */
-.layer_box{position:absolute; top:50%; right:88px; z-index:10; width:170px; height:auto; margin-top:-75px; border-radius:5px; background-color:#fff;box-shadow:2px 2px 8px rgba(0,0,0,0.7); overflow:hidden;}
+.layer_box{position:absolute; top:50%; right:93px; z-index:10; width:160px; height:auto; margin-top:-75px; border-radius:5px; background-color:#fff;box-shadow:2px 2px 8px rgba(0,0,0,0.7); overflow:hidden;}
 .layer_box > div{position:relative; width:100%; height:46px; line-height:46px; border-bottom:1px solid #c9c9c9;}
 .layer_box > div > a{display:block; width:100%; height:100%; padding-left:60px; box-sizing:border-box; color:#707070; font-size:15px; font-weight:bold;}
 .layer_box > div > a:active{background:rgba(0,0,0,0.05);}
