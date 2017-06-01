@@ -81,13 +81,13 @@
 .block_a .btn_block:active{background:#f7f7f7;}
 
 /* 영상통화 레이어 */
-.layer_box{position:absolute; top:50%; right:88px; z-index:10; width:150px; height:auto; margin-top:-75px; border-radius:5px; background-color:#fff;box-shadow:2px 2px 8px rgba(0,0,0,0.7); overflow:hidden;}
+.layer_box{position:absolute; top:50%; right:88px; z-index:10; width:170px; height:auto; margin-top:-75px; border-radius:5px; background-color:#fff;box-shadow:2px 2px 8px rgba(0,0,0,0.7); overflow:hidden;}
 .layer_box > div{position:relative; width:100%; height:46px; line-height:46px; border-bottom:1px solid #c9c9c9;}
-.layer_box > div > a{display:block; width:100%; height:100%; padding-left:50px; box-sizing:border-box; color:#707070; font-size:15px; font-weight:bold;}
+.layer_box > div > a{display:block; width:100%; height:100%; padding-left:60px; box-sizing:border-box; color:#707070; font-size:15px; font-weight:bold;}
 .layer_box > div > a:active{background:rgba(0,0,0,0.05);}
-.layer_box .layer_video{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_video.png") no-repeat 16px center; background-size:22px 22px;}
-.layer_box .layer_reque{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_reque.png") no-repeat 18px center; background-size:18px 25px;}
-.layer_box .layer_clse{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_clse.png") no-repeat 21px center; background-size:12px 12px; border-bottom:0 none;}
+.layer_box .layer_video{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_video.png") no-repeat 21px center; background-size:22px 22px;}
+.layer_box .layer_reque{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_reque.png") no-repeat 24px center; background-size:18px 25px;}
+.layer_box .layer_clse{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_clse.png") no-repeat 27px center; background-size:12px 12px; border-bottom:0 none;}
 
 /******************** 상세 대화함 css ********************/
 .msg_h1{position:relative; width:100%; height:100%; padding-left:45px; box-sizing:border-box; color:#fff; text-align:left; font-size:18px; font-weight:bold;}
@@ -151,7 +151,7 @@
 .ptn_msg .btn_report:active{animation:push 0.2s ease-in-out 1;-webkit-animation:push 0.2s ease-in-out 1; -o-animation:push 0.2s ease-in-out 1; -moz-animation:push 0.2s ease-in-out 1; -ms-animation:push 0.2s ease-in-out 1;}
 
 /* 메시지 내용 */
-.talkbubble_wrap{position:relative; max-width:60%; height:auto;}
+.talkbubble_wrap{position:relative; max-width:65%; height:auto;}
 .talkbubble_wrap .talkbubble{position:relative; width:auto; height:auto; line-height:18px; padding:9px 10px; border-radius:18px; box-sizing:border-box; color:#000; font-size:14px;}
 .talkbubble_wrap .tb_vedio{color:#686868; font-weight:bold;}
 .talkbubble_wrap .tb_vedio img{vertical-align:middle; margin-right:3px;}
