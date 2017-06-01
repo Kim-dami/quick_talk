@@ -118,7 +118,7 @@ td,th {padding:0;}
 .top_section .top_btn a:active{background:rgba(0,0,0,0.1);}
 
 /* 영상룸 상단_보석포인트정보 */
-.video_header{position:fixed; width:100%; height:auto; top:55px; left:0; right:0; z-index:200; border-bottom:1px solid #bababa; background:#ececec; overflow:auto;}
+.video_header{width:100%; height:auto; top:55px; left:0; right:0; z-index:200; border-bottom:1px solid #bababa; background:#ececec; overflow:auto; clear:both;}
 .video_header .my_jewel{float:left; width:auto; height:auto; margin-left:4px; font-size:13px; font-weight:bold;}
 .video_header .my_jewel span.ico_jewel{float:left; padding-right:18px; margin-right:3px; background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_jewel.png) right center no-repeat; background-size:15px 13px; line-height:40px;}
 .video_header .my_jewel span.color_jewel{float:left; color:#f97895; line-height:40px;}
@@ -159,3 +159,64 @@ td,th {padding:0;}
 .radio_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
 .radio_lst01 label{display:block; width:100%; height:27px; line-height:27px; padding-left:24px; cursor:pointer; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
 .radio_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
+
+/*
+ ** 플로팅버튼 **
+          */
+.float_wrap{position:fixed; right:10px; bottom:50px; z-index:300; width:50px; height:auto;}
+.float_bg_modal{display:none; position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
+.float_btn {position:relative; width:50px; height:50px; border-radius:100%; background:#ff5548 url("http://image.club5678.com/imgs/quick_talk/img01/ico_floating.png") no-repeat center center; background-size:20px 20px; box-shadow:1px 2px 6px rgba(0,0,0,0.3); transition:0.2s transform ease-in-out; cursor:pointer;}
+.float_write{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_write a{display:block; width:25%; height:100%; border-radius:100%; box-shadow:1px 2px 6px rgba(0,0,0,0.3); float:left; background:#fff url("http://image.club5678.com/imgs/quick_talk/img01/ico_float_write.png") center center no-repeat; background-size:21px 20px;}
+.float_write a:active{background-color:#efefef;}
+.float_set{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_set a{display:block; width:25%; height:100%; border-radius:100%; box-shadow:1px 2px 6px rgba(0,0,0,0.3); float:left; background:#fff url("http://image.club5678.com/imgs/quick_talk/img01/ico_float_sett.png") center center no-repeat; background-size:24px 24px;}
+.float_set a:active{background-color:#efefef;}
+
+.float_txt{width:75%; height:100%; padding-right:12px; box-sizing:border-box; font-size:15px; color:#fff; font-weight:bold; text-align:right; float:left;}
+
+@keyframes up01 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-70px; transform:scale(1); opacity:1;}
+}
+@-webkit-keyframes up01 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-70px; transform:scale(1); opacity:1;}
+}
+@-ms-keyframes up01 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-70px; transform:scale(1); opacity:1;}
+}
+@-moz-keyframes up01 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-70px; transform:scale(1); opacity:1;}
+}
+@-o-keyframes up01 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-70px; transform:scale(1); opacity:1;}
+}
+@keyframes up02 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-140px; transform:scale(1); opacity:1;}
+}
+@-webkit-keyframes up02 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-140px; transform:scale(1); opacity:1;}
+}
+@-ms-keyframes up02 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-140px; transform:scale(1); opacity:1;}
+}
+@-moz-keyframes up02 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-140px; transform:scale(1); opacity:1;}
+}
+@-o-keyframes up02 {
+0% {top:-25px; transform:scale(0); opacity:0;}
+100% {top:-140px; transform:scale(1); opacity:1;}
+}
+
+.float_on .float_bg_modal{display:block;}
+.float_on .float_btn{transform:rotate(-135deg); -webkit-transform:rotate(-135deg); -o-transform:rotate(-135deg); -moz-transform:rotate(-135deg); -ms-transform:rotate(-135deg);}
+.float_on .float_write{top:-70px; transform:scale(1); opacity:1; animation:up01 0.2s ease-in-out 1;-webkit-animation:up01 0.2s ease-in-out 1; -o-animation:up01 0.2s ease-in-out 1; -moz-animation:up01 0.2s ease-in-out 1; -ms-animation:up01 0.2s ease-in-out 1;}
+.float_on .float_set{top:-140px; transform:scale(1); opacity:1; animation:up02 0.2s ease-in-out 1;-webkit-animation:up02 0.2s ease-in-out 1; -o-animation:up02 0.2s ease-in-out 1; -moz-animation:up02 0.2s ease-in-out 1; -ms-animation:up02 0.2s ease-in-out 1;}

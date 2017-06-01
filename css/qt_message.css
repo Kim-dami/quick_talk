@@ -1,7 +1,6 @@
 .mt_87{margin-top:87px;}
 .mt_138{margin-top:138px;}
 .top_45{top:45px;}
-.top_96{top:96px;}
 
 /******************** 상단 영역 ********************/
 .top_section .slctdel_wrap{position:relative; width:auto; height:40px; float:left;}
@@ -80,3 +79,92 @@
 .vd_a .vd_badge{position:absolute; top:-10px; right:-2px; width:22px; height:22px; line-height:22px; border-radius:100%; background-color:#ff5548; color:#fff; text-align:center; font-size:13px; font-weight:bold;}
 .block_a .btn_block{position:absolute; top:18px; right:5px; width:78px; height:34px; line-height:34px; border:1px solid #bababa; border-radius:17px; box-sizing:border-box; color:#575757; background-color:#fff; text-align:center; font-size:13px; font-weight:bold; cursor:pointer;}
 .block_a .btn_block:active{background:#f7f7f7;}
+
+/******************** 상세 대화함 css ********************/
+.msg_h1{position:relative; width:100%; height:100%; padding-left:45px; box-sizing:border-box; color:#fff; text-align:left; font-size:18px; font-weight:bold;}
+.btn_friend{position:absolute; top:7px; right:5px; width:70px; height:31px; line-height:31px; border-radius:3px; background-color:#fff; overflow:hidden;}
+.btn_friend a{display:block; width:100%; height:100%; color:#f04a37; text-align:center; font-size:14px; font-weight:bold;}
+.btn_friend a:active{background:#f7f7f7;}
+.msg_btn_wrap{position:relative; width:auto; height:40px; padding:5px; box-sizing:border-box; float:left;}
+.msg_btn_wrap .msg_btn{width:auto; height:100%; margin-right:4px; border-radius:3px; float:left;}
+.msg_btn_wrap .msg_btn:last-of-type{margin-right:0px;}
+.msg_btn_wrap .msg_btn a{display:block; width:auto; height:100%; line-height:30px; padding:0 9px; border-radius:3px; text-align:center; color:#575757; font-size:14px; font-weight:bold; overflow:hidden;}
+.msg_btn_wrap .msg_btn a:active{background:#f7f7f7;}
+.top_section .top_btn a{padding:0 10px;}
+@media screen and (max-width:350px){
+	.msg_btn_wrap .msg_btn{margin-right:3px;}
+	.msg_btn_wrap .msg_btn a{padding:0 6px;}
+	.top_section .top_btn:first-of-type{margin-right:3px;}
+	.top_section .top_btn a{padding:0 6px;}
+}
+
+.tdd_container{height:100%; padding:87px 5px 45px 5px; box-sizing:border-box;}
+.vdd_container{height:100%; padding:87px 5px 5px 5px; box-sizing:border-box;}
+.msg_day_wrap{position:relative; width:100%; height:auto; overflow:hidden;}
+.day_wrap{position:relative; width:100%; height:auto; padding:25px 0;}
+.day_wrap .day_line{position:relative; width:100%; height:1px; background-color:#ccc;}
+.day_wrap .day_txt{position:absolute; top:15px; left:50%; width:auto; height:20px; line-height:20px; padding:0 5px; background:#fff; color:#686868; font-size:14px; font-weight:bold; transform: translateX(-50%);}
+
+.msg_wrap{position:relative; width:100%; height:auto; padding-bottom:12px; box-sizing:border-box;}
+.msg_wrap:after{content:""; display:block; clear:both;}
+.ptn_msg{padding-left:71px;}
+.my_msg{padding-right:7px;}
+
+/* 상대 사진 */
+.ptn_msg .photo_wrap{position:absolute; top:0; left:0px; width:71px; height:57px; padding:0 7px; box-sizing:border-box;}
+.ptn_msg .photo_clip{width:100%; height:100%; border-radius:100%; overflow:hidden;}
+.ptn_msg .photo_clip img{display:block; width:100%; height:100%;}
+
+/* 정보 및 신고버튼 */
+.ptn_msg .comp_txt_line{position:relative; height:auto; padding:3px 0 3px 0;}
+.ptn_msg .fc_male, .ptn_msg .fc_female{display:inline-block; vertical-align:middle; max-width:75%; height:24px; line-height:24px; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.ptn_msg .btn_report{display:inline-block; vertical-align:middle; width:45px; height:24px; border:1px solid #dbdbdb; border-radius:12px; box-sizing:border-box; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_dd_report.png") no-repeat center center; background-size:32px 12px; cursor:pointer;}
+@keyframes push {
+50% {transform:scale(0.9);}
+100% {transform:scale(1);}
+}
+@-webkit-keyframes push {
+50% {-webkit-transform:scale(0.9);}
+100% {-webkit-transform:scale(1);}
+}
+@-ms-keyframes push {
+50% {-ms-transform:scale(0.9);}
+100% {-ms-transform:scale(1);}
+}
+@-moz-keyframes push {
+50% {-moz-transform:scale(0.9);}
+100% {-moz-transform:scale(1);}
+}
+@-o-keyframes push {
+50% {-o-transform:scale(0.9);}
+100% {-o-transform:scale(1);}
+}
+.ptn_msg .btn_report:active{animation:push 0.2s ease-in-out 1;-webkit-animation:push 0.2s ease-in-out 1; -o-animation:push 0.2s ease-in-out 1; -moz-animation:push 0.2s ease-in-out 1; -ms-animation:push 0.2s ease-in-out 1;}
+
+/* 메시지 내용 */
+.talkbubble_wrap{position:relative; max-width:60%; height:auto;}
+.talkbubble_wrap .talkbubble{position:relative; width:auto; height:auto; line-height:18px; padding:9px 10px; border-radius:18px; box-sizing:border-box; color:#000; font-size:14px;}
+.talkbubble_wrap .tb_vedio{color:#686868; font-weight:bold;}
+.talkbubble_wrap .tb_vedio img{vertical-align:middle; margin-right:3px;}
+.talkbubble_wrap .talk_time{position:absolute; bottom:9px; width:65px; height:12px; line-height:12px; color:#4a4a4a; text-align:center; font-size:12px;}
+
+.ptn_bubble_wrap{float:left; padding-left:7px;}
+.ptn_bubble_wrap:after{content:""; position:absolute; top:7px; left:0; width:10px; height:9px; background:url("http://image.club5678.com/imgs/quick_talk/img01/bg_ptn_msg.png") no-repeat center center; background-size:10px 9px;}
+.ptn_bubble_wrap .talkbubble{background-color:#feeeed;}
+.ptn_bubble_wrap .talk_time{right:-65px;}
+.ptn_bubble_wrap .talk_1{position:absolute; right:-75px; bottom:9px; width:10px; height:12px; line-height:12px; color:#ff5548; text-align:center; font-size:12px; font-weight:bold;}
+
+.my_bubble_wrap{float:right; padding-right:7px;}
+.my_bubble_wrap:after{content:""; position:absolute; top:7px; right:0; width:10px; height:9px; background:url("http://image.club5678.com/imgs/quick_talk/img01/bg_my_msg.png") no-repeat center center; background-size:10px 9px;}
+.my_bubble_wrap .talkbubble{background-color:#ddf1f3;}
+.my_bubble_wrap .talk_time{left:-65px;}
+
+/* 메시지 입력창 */
+.msg_input_wrap{position:fixed; left:0; bottom:0; right:0; width:100%; height:50px; padding:7px 5px; box-sizing:border-box; background-color:#fff;}
+.msg_input_wrap .msg_input_bg{position:relative; width:100%; height:100%; padding:0 65px 0 55px; border:1px solid #969696; border-radius:3px; box-sizing:border-box;}
+.msg_input_wrap .msg_input_bg:after{content:""; display:block; clear:both;}
+.msg_input_wrap .btn_camera{position:absolute; top:0; left:0; z-index:10; width:45px;  height:100%; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_dd_photo.png") no-repeat right center; background-size:34px 23px; cursor:pointer;}
+.msg_input_wrap .msg_input{position:relative; width:100%; height:100%; padding:7px 0px; box-sizing:border-box;}
+.msg_input_wrap .msg_input input[type="text"]{display:block; width:100%; height:100%; line-height:20px; border:none; background:none; outline:none; color:#000; font-size:14px;}
+.msg_input_wrap .btn_send{position:absolute; top:-1px; right:-1px; width:55px; height:36px; line-height:36px; border-radius:0px 3px 3px 0px; background-color:#969696; color:#fff; text-align:center; font-size:15px; font-weight:bold; cursor:pointer;}
+.msg_input_wrap .btn_send_focus{background-color:#6570db;}
