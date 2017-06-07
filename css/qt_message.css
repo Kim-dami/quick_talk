@@ -174,3 +174,27 @@
 .msg_input_wrap .msg_input input[type="text"]{display:block; width:100%; height:100%; line-height:20px; border:none; background:none; outline:none; color:#000; font-size:14px;}
 .msg_input_wrap .btn_send{position:absolute; top:-1px; right:-1px; width:55px; height:36px; line-height:36px; border-radius:0px 3px 3px 0px; background-color:#969696; color:#fff; text-align:center; font-size:15px; font-weight:bold; cursor:pointer;}
 .msg_input_wrap .btn_send_focus{background-color:#6570db;}
+
+/******************** 신고하기 css ********************/
+.pop_bg_modal {position:absolute; z-index:1000; width:100%; height:100%; background:rgba(0,0,0,.6);}
+.rept_wrap{position:absolute; z-index:1000; width:80%; height:auto; left:50%; top:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); border-radius:5px; box-shadow:1px 1px 8px rgba(0,0,0,0.7);}
+.rept_header {position:relative; width:100%; height:auto; border-radius:5px 5px 0 0; overflow:hidden;}
+.rept_header h2 {width:100%; height:35px; margin:0; padding:0 15px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
+.rept_header h2 .small{font-size:14px;}
+
+.rept_content{position:relative; width:100%; height:auto; background-color:#fff;}
+.rept_content .rept_raio{position:relative; width:100%; height:auto; border-bottom:1px solid #d5d5d5;}
+.rept_content label{height:40px; line-height:40px; padding-left:15px; padding-right:25px; color:#4a4a4a; font-size:14px; font-weight:bold; background: url(http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png) no-repeat 92% center; background-size: 15px 15px;}
+.rept_content input:checked+label{height:35px; line-height:35px; padding-left:15px; padding-right:25px; background: url(http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png) no-repeat 92% center; background-size: 15px 15px;}
+.rept_content .rept_txtbox{position:relative; width:100%; height:auto; padding:5px 15px 9px 15px; box-sizing:border-box;}
+.rept_content .rept_txtbox p{width:100%; height:25px; line-height:25px; font-size:13px; font-weight:bold; color:#7c86e9;}
+.rept_content .rept_textarea{position:relative; width:100%; height:50px; padding:5px; border-radius:3px; border:1px solid #d5d5d5; box-sizing:border-box; background-color:#f6f6f6}
+.rept_content .rept_textarea textarea{width:100%; height:100%; line-height:20px; border:none; background-color:#f6f6f6; color:#4a4a4a; font-size:14px; outline:none; resize:none; box-shadow:none; appearance:none; -webkit-appearance:none; -moz-appearance:none;}
+
+.rept_dn{position:relative; width:100%; height:auto; border-radius:0 0 5px 5px; overflow:hidden;}
+.rept_dn:after{content:""; display:block; clear:both;}
+.rept_dn div{width:50%; height:45px; line-height:45px;}
+.rept_dn div a{display:block; width:100%; height:100%; text-align:center; font-size:15px; font-weight:bold;}
+.rept_dn div a:active{background:rgba(0,0,0,0.05);}
+.rept_dn .btn_cancle{background-color:#ececec; color:#4a4a4a; float:left;}
+.rept_dn .btn_report{background-color:#4a4a4a; color:#fff; float:right;}

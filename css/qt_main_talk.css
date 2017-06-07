@@ -7,6 +7,7 @@ body{background-color:#e7e7e7}
 .talk_u li{position:relative; width:100%; margin-top:4px;}
 .talk_u li:first-of-type{margin-top:0px;}
 .talk_u .talk_l{height:auto; border:1px solid #c0c0c0; border-radius:3px; box-sizing:border-box; background-color:#fff; box-shadow:0 1px 0px #d8d8d8;}
+.talk_u .myup{position:relative; width:100%; height:30px; line-height:30px; color:#fff; text-align:center; cursor:pointer; font-size:15px; font-weight:bold; opacity:0.6;}
 
 /* 리스트 상단 */
 .talk_u .talk_top{position:relative; width:100%; height:71px; padding:7px 64px 7px 72px; box-sizing:border-box;}
@@ -50,4 +51,4 @@ body{background-color:#e7e7e7}
 .talk_u .admin_wrap span{font-weight:bold; margin-left:5px;}
 
 /* 배너 */
-.talk_u .list_banner{height:60px; background-color:#ffc868;}
+.talk_u .list_banner{height:60px; background-color:#808080;}

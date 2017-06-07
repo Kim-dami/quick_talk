@@ -31,7 +31,7 @@ body{background-color:#f6f6f6;}
 .mycoin .mycoin_bg{position:relative; width:100%;  height:auto; line-height:23px; padding:13px 0px; border:1px solid #d5d5d5; border-radius:5px; box-sizing:border-box; background-color:#fff; text-align:center; font-size:15px; font-weight:bold;}
 .mycoin .mycoin_fix{display:inline-block; vertical-align:middle; width:100px; text-align:left;}
 .mycoin .mycoin_flex{display:inline-block; vertical-align:middle; width:85px; text-align:right;}
-.ticket_btn{position:relative; width:100%; height:auto; padding:0px 10px; box-sizing:border-box;}
+.ticket_btn{position:relative; width:100%; height:auto; padding:0px 10px 10px 10px; box-sizing:border-box;}
 .ticket_btn:after{content:""; display:block; clear:both;}
 .ticket_btn .btn_cancle{width:46%; height:40px; line-height:40px; border-radius:5px; background-color:#cecece; float:left;}
 .ticket_btn .btn_coin{width:46%; height:40px; line-height:40px; border-radius:5px; background-color:#7c86e9; float:right;}

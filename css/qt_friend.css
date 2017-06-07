@@ -1,0 +1,63 @@
+/******************** 친구리스트 공통 css *********************/
+#container{margin-top:55px;}
+.frd_tap{position:relative; width:100%; height:40px; line-height:40px;}
+.frd_tap > div{width:50%; height:100%; border-bottom:2px solid #4a4a4a; float:left; box-sizing:border-box; color:#777777; text-align:center; font-size:15px; font-weight:bold; cursor:pointer;}
+.frd_tap .tap_on{background-color:#4a4a4a; color:#fff;}
+
+.frd_slctdel_wrap{position:relative; width:100%; height:41px; line-height:40px; padding:0 80px 0 30px; border-bottom:1px solid #d1d1d1; box-sizing:border-box;}
+.frd_slctdel_wrap .chk_slctdel{position:absolute; top:0; left:0; z-index:10; width:30px; height:100%; padding:10px 5px; box-sizing:border-box;}
+.frd_slctdel_wrap p{position:relative; width:100%; height:100%; font-size:13px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.frd_slctdel_wrap .btn_slctdel{position:absolute; top:5px; right:5px; z-index:10; width:70px; height:30px; line-height:30px; color:#575757; text-align:center; font-size:14px; font-weight:bold; cursor:pointer;}
+.frd_slctdel_wrap .btn_slctdel:active{background:#f7f7f7;}
+.frd_u{position:relative; width:100%; height:auto; background-color:#fff;}
+
+.frd_u li{position:relative; width:100%; height:72px; border-bottom:1px solid #d1d1d1; box-sizing:border-box;}
+.frd_u .frd_chk{position:absolute; top:0; left:0px; width:30px; height:71px; padding:25px 5px; box-sizing:border-box;}
+.frd_u .photo_wrap{position:absolute; top:0; left:30px; width:71px; height:71px; padding:7px; box-sizing:border-box;}
+.frd_u .photo_clip{width:100%; height:100%; border-radius:100%; overflow:hidden;}
+.frd_u .photo_clip img{display:block; width:100%; height:100%;}
+.frd_u .frd_txt{position:relative; width:100%; height:100%; line-height:19px; color:#686868; font-size:14px;}
+.frd_u .fc_male, .frd_u .fc_female{width:100%; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.frd_u .frd_loca{width:100%; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.frd_u .frd_date{width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/******************** 토크룸 친구리스트 css ********************/
+.frd_u .frd_talk_l{padding:7px 64px 7px 101px;}
+.frd_u .btn_contact{position:absolute; top:12px; right:8px; width:47px; height:47px; border-radius:3px; opacity:0.9;}
+.frd_u .btn_contact a{display:block; width:100%; height:100%; line-height:18px; padding:6px 0px; box-sizing:border-box; color:#fff; text-align:center; font-size:15px; font-weight:bold;}
+@keyframes push {
+50% {transform:scale(0.9);}
+100% {transform:scale(1);}
+}
+@-webkit-keyframes push {
+50% {-webkit-transform:scale(0.9);}
+100% {-webkit-transform:scale(1);}
+}
+@-ms-keyframes push {
+50% {-ms-transform:scale(0.9);}
+100% {-ms-transform:scale(1);}
+}
+@-moz-keyframes push {
+50% {-moz-transform:scale(0.9);}
+100% {-moz-transform:scale(1);}
+}
+@-o-keyframes push {
+50% {-o-transform:scale(0.9);}
+100% {-o-transform:scale(1);}
+}
+.frd_u .btn_contact:active{animation:push 0.2s ease-in-out 1;-webkit-animation:push 0.2s ease-in-out 1; -o-animation:push 0.2s ease-in-out 1; -moz-animation:push 0.2s ease-in-out 1; -ms-animation:push 0.2s ease-in-out 1;}
+
+/******************** 영상룸 친구리스트 css ********************/
+.frd_u .frd_video_l{padding:7px 88px 7px 101px;}
+.frd_u .btn_video{position:absolute; top:18px; right:5px; width:78px; height:34px; line-height:34px; border-radius:17px; color:#fff; text-align:center; font-size:13px; font-weight:bold; cursor:pointer;}
+.frd_u .btn_video:active{top:19px;}
+.frd_u .btn_video img{vertical-align:middle; margin-right:2px;}
+
+/* 영상통화 레이어 */
+.layer_box{position:absolute; top:50%; right:93px; z-index:10; width:160px; height:auto; margin-top:-75px; border-radius:5px; background-color:#fff;box-shadow:2px 2px 8px rgba(0,0,0,0.7); overflow:hidden;}
+.layer_box > div{position:relative; width:100%; height:46px; line-height:46px; border-bottom:1px solid #c9c9c9;}
+.layer_box > div > a{display:block; width:100%; height:100%; padding-left:60px; box-sizing:border-box; color:#707070; font-size:15px; font-weight:bold;}
+.layer_box > div > a:active{background:rgba(0,0,0,0.05);}
+.layer_box .layer_video{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_video.png") no-repeat 21px center; background-size:22px 22px;}
+.layer_box .layer_reque{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_reque.png") no-repeat 24px center; background-size:18px 25px;}
+.layer_box .layer_clse{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_layer_clse.png") no-repeat 27px center; background-size:12px 12px; border-bottom:0 none;}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>빠른만남</title>
+
+<link href="css/qt_default.css" rel="stylesheet" type="text/css">
+<link href="css/qt_message.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body ontouchstart="">
+<div id="wrap">
+	<div class="pop_bg_modal"></div><!-- 팝업 배경 -->
+    <div class="rept_wrap">
+        <!-- 메시지 헤더 -->
+        <div class="rept_header bg_video">
+            <h2>신고하기 <span class="small">(사유선택)</span></h2>
+        </div>
+        <!-- // 메시지 헤더 -->
+        <!-- 메시지 콘텐츠 -->
+        <div class="rept_content">
+        	<div class="rept_raio">
+				<div class="radio_lst01">
+					<input type="radio" name="rept_radio" id="radio01" checked="checked"/>
+					<label for="radio01">욕설/비방</label>
+				</div>
+       		</div>
+       		<div class="rept_raio">
+				<div class="radio_lst01">
+					<input type="radio" name="rept_radio" id="radio02"/>
+					<label for="radio02">광고/상업성</label>
+				</div>
+       		</div>
+       		<div class="rept_raio">
+				<div class="radio_lst01">
+					<input type="radio" name="rept_radio" id="radio03"/>
+					<label for="radio03">음란성</label>
+				</div>
+       		</div>
+       		<div class="rept_raio">
+				<div class="radio_lst01">
+					<input type="radio" name="rept_radio" id="radio04"/>
+					<label for="radio04">기타</label>
+				</div>
+       		</div>
+       		<div class="rept_txtbox">
+       			<p>상세 사유 입력</p>
+       			<div class="rept_textarea">
+       				<textarea></textarea>
+       			</div>
+       		</div>
+        </div>
+        <!-- // 메시지 콘텐츠 -->
+        <!--  메시지 하단 -->
+        <div class="rept_dn">
+			<div class="btn_cancle"><a href="#">취소</a></div>
+       		<div class="btn_report"><a href="#">신고하기</a></div>
+        </div>
+        <!-- // 메시지 하단 -->
+    </div>
+	<!-- 헤더 -->
+	<div id="header" class="hd_sub hd_fix bg_main">
+		<div class="hd_btn btn_back">
+			<a href="#"><span class="blind">뒤로</span></a>
+		</div>
+		<h1 class="msg_h1">배수지</h1>
+   		<div class="btn_friend">
+   			<a href="#">친구추가</a>
+   		</div>  
+    </div>
+    <!-- // 헤더 -->
+    <!-- 상단 영역 -->
+    <div class="top_section top_45">
+		<!-- 상단 메시지 버튼 -->
+		<div class="msg_btn_wrap">
+			<div class="msg_btn bg_white_btn">
+                <a href="#">대화함</a>
+            </div>
+            <div class="msg_btn bg_white_btn">
+                <a href="#">차단</a>
+            </div>
+            <div class="msg_btn bg_white_btn">
+                <a href="#">삭제</a>
+            </div>
+		</div>       
+        <!-- // 상단 메시지 버튼 -->    
+        <!-- 상단 버튼 -->
+        <div class="top_btn_wrap">
+            <div class="top_btn bg_main_btn">
+                <a href="#">전체리스트</a>
+            </div>
+            <div class="top_btn bg_main_btn">
+                <a href="#">글쓰기</a>
+            </div>
+        </div>
+        <!-- // 상단 버튼 -->
+    </div>
+    <!-- // 상단 영역 -->
+    <div id="container" class="tdd_container">
+    	<!-- 날짜구분 메시지 -->
+		<div class="msg_day_wrap">
+			<div class="day_wrap">
+				<div class="day_line"></div>
+				<div class="day_txt">2017월 12월29일</div>
+			</div>
+			<!-- 상대메시지 -->
+			<div class="msg_wrap ptn_msg">
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="img/female01.png" />
+					</div>
+				</div>
+				<!-- // 상대사진 -->
+				<!-- 정보 및 신고버튼 -->
+				<div class="comp_txt_line">
+					<div class="fc_female">배수지(여/24세/서울>강남구)</div>
+					<div class="btn_report"><span class="blind">신고</span></div>
+				</div>
+				<!-- // 정보 및 신고버튼 -->
+				<!-- 상대 메시지 내용 -->
+				<div class="talkbubble_wrap ptn_bubble_wrap">
+					<div class="talkbubble">
+						 어디에서 만날까요?
+					</div>
+					<span class="talk_time">오후 08:48</span>
+					<!-- 메시지 시간 -->
+				</div>
+				<!-- // 상대 메시지 내용 -->
+			</div>
+			<!-- // 상대메시지 -->
+			<!-- 내메시지 -->
+			<div class="msg_wrap my_msg">
+				<!-- 내 메시지 내용 -->
+				<div class="talkbubble_wrap my_bubble_wrap">
+					<div class="talkbubble">
+						 네네 어디에서 만날까요?
+					</div>
+					<span class="talk_time">오후 03:30</span>
+					<!-- 메시지 시간 -->
+				</div>
+				<!-- // 내 메시지 내용 -->
+			</div>
+			<!-- // 내메시지 -->
+			<!-- 내메시지 -->
+			<div class="msg_wrap my_msg">
+				<!-- 내 메시지 내용 -->
+				<div class="talkbubble_wrap my_bubble_wrap">
+					<div class="talkbubble">
+						 광주광역시 서구 상무대로 760 (마륵동) 광주도시철도공사 9층 인포렉스
+					</div>
+					<span class="talk_time">오후 11:11</span>
+					<!-- 메시지 시간 -->
+				</div>
+				<!-- // 내 메시지 내용 -->
+			</div>
+			<!-- // 내메시지 -->
+		</div>
+		<!-- // 날짜구분 메시지 -->
+		<!-- 날짜구분 메시지 -->
+		<div class="msg_day_wrap">
+			<div class="day_wrap">
+				<div class="day_line"></div>
+				<div class="day_txt">2017월 12월31일</div>
+			</div>
+			<!-- 상대메시지 -->
+			<div class="msg_wrap ptn_msg">
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="img/female01.png" />
+					</div>
+				</div>
+				<!-- // 상대사진 -->
+				<!-- 정보 및 신고버튼 -->
+				<div class="comp_txt_line">
+					<div class="fc_female">배수지(여/24세/서울>강남구)</div>
+					<div class="btn_report"><span class="blind">신고</span></div>
+				</div>
+				<!-- // 정보 및 신고버튼 -->
+				<!-- 상대 메시지 내용 -->
+				<div class="talkbubble_wrap ptn_bubble_wrap">
+					<div class="talkbubble">
+						 언제 만날까요? 언제 만날까요? 언제 만날까요? 언제 만날까요?
+					</div>
+					<span class="talk_time">오후 08:48</span>
+					<span class="talk_1">1</span>
+					<!-- 메시지 시간 -->
+				</div>
+				<!-- // 상대 메시지 내용 -->
+			</div>
+			<!-- // 상대메시지 -->
+			<!-- 상대메시지 -->
+			<div class="msg_wrap ptn_msg">
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="img/female01.png" />
+					</div>
+				</div>
+				<!-- // 상대사진 -->
+				<!-- 정보 및 신고버튼 -->
+				<div class="comp_txt_line">
+					<div class="fc_female">배수지(여/24세/서울>강남구)</div>
+					<div class="btn_report"><span class="blind">신고</span></div>
+				</div>
+				<!-- // 정보 및 신고버튼 -->
+				<!-- 상대 메시지 내용 -->
+				<div class="talkbubble_wrap ptn_bubble_wrap">
+					<div class="talkbubble">
+						 어디에서 만날까요?
+					</div>
+					<span class="talk_time">오후 08:48</span>
+					<span class="talk_1">1</span>
+					<!-- 메시지 시간 -->
+				</div>
+				<!-- // 상대 메시지 내용 -->
+			</div>
+			<!-- // 상대메시지 -->
+		</div>
+		<!-- // 날짜구분 메시지 -->
+	</div>
+	<!-- 메시지 입력창 -->
+	<div class="msg_input_wrap">
+		<div class="msg_input_bg">
+			<div class="btn_camera">
+				<span class="blind">사진전송</span>
+			</div>
+			<div class="msg_input">
+				<input type="text" value="">
+			</div>
+			<div class="btn_send">전송</div><!-- 글씨가 써지면 버튼 활성화(클래스 .btn_send_focus 추가) -->
+		</div>
+	</div>
+	<!-- // 메시지 입력창 -->
+</div>
+</body>
+</html>
