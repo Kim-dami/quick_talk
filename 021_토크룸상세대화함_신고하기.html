@@ -8,19 +8,20 @@
 
 <link href="css/qt_default.css" rel="stylesheet" type="text/css">
 <link href="css/qt_message.css" rel="stylesheet" type="text/css">
+<link href="css/qt_pop.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body ontouchstart="">
 <div id="wrap">
 	<div class="pop_bg_modal"></div><!-- 팝업 배경 -->
-    <div class="rept_wrap">
-        <!-- 메시지 헤더 -->
-        <div class="rept_header bg_video">
+    <div class="pop_wrap">
+        <!-- 신고 헤더 -->
+        <div class="pop_header bg_video">
             <h2>신고하기 <span class="small">(사유선택)</span></h2>
         </div>
-        <!-- // 메시지 헤더 -->
-        <!-- 메시지 콘텐츠 -->
+        <!-- // 신고 헤더 -->
+        <!-- 신고 콘텐츠 -->
         <div class="rept_content">
         	<div class="rept_raio">
 				<div class="radio_lst01">
@@ -47,19 +48,19 @@
 				</div>
        		</div>
        		<div class="rept_txtbox">
-       			<p>상세 사유 입력</p>
+       			<p class="fc_purple">상세 사유 입력</p>
        			<div class="rept_textarea">
        				<textarea></textarea>
        			</div>
        		</div>
         </div>
-        <!-- // 메시지 콘텐츠 -->
-        <!--  메시지 하단 -->
-        <div class="rept_dn">
-			<div class="btn_cancle"><a href="#">취소</a></div>
-       		<div class="btn_report"><a href="#">신고하기</a></div>
+        <!-- // 신고 콘텐츠 -->
+        <!--  신고 하단 -->
+        <div class="pop_full_dn">
+			<div class="btn_white"><a href="#">취소</a></div>
+       		<div class="btn_black"><a href="#">신고하기</a></div>
         </div>
-        <!-- // 메시지 하단 -->
+        <!-- // 신고 하단 -->
     </div>
 	<!-- 헤더 -->
 	<div id="header" class="hd_sub hd_fix bg_main">

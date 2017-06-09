@@ -1,0 +1,139 @@
+@charset "utf-8";
+/******************** 팝업 공통 css ********************/
+.fc_purple{color:#7c86e9;}
+
+/* 팝업 픽스 */
+.pop_bg_modal {position:absolute; z-index:1000; width:100%; height:100%; background:rgba(0,0,0,.6);}
+.pop_wrap{position:absolute; z-index:1000; width:92%; height:auto; left:50%; top:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); box-shadow:1px 1px 8px rgba(0,0,0,0.7); background:#fff; border-radius:5px; overflow:hidden;}
+
+/* 팝업 헤더 */
+.pop_header {position:relative; width:100%; height:auto; border-radius:5px 5px 0 0;}
+.pop_header h2 {width:100%; height:35px; margin:0; padding:0 15px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
+
+/* 팝업 하단 */
+.pop_dn{position:relative; width:100%; height:auto; padding:0 13% 15px 13%; border-radius:0 0 5px 5px; background:#fff; box-sizing:border-box; overflow:hidden;}
+.pop_dn .btn_white{float:left; width:50%; height:40px; padding-right:8px; box-sizing:border-box;}
+.pop_dn .btn_black{float:right; width:50%; height:40px; padding-left:8px; box-sizing:border-box;}
+.pop_dn .btn_white a{display:block; width:100%; height:100%; line-height:38px; border-radius:3px; background-color:#fff; border:1px solid #bababa; border-radius:3px; box-sizing:border-box; font-size:15px; font-weight:bold; color:#575757; text-align:center;}
+.pop_dn .btn_black a{display:block; width:100%; height:100%; line-height:38px; border-radius:3px; background-color:#4a4a4a; font-size:15px; font-weight:bold; color:#fff; text-align:center;}
+
+.pop_full_dn{position:relative; width:100%; height:auto; border-radius:0 0 5px 5px; overflow:hidden;}
+.pop_full_dn:after{content:""; display:block; clear:both;}
+.pop_full_dn div{width:50%; height:45px; line-height:45px;}
+.pop_full_dn div a{display:block; width:100%; height:100%; text-align:center; font-size:15px; font-weight:bold;}
+.pop_full_dn div a:active{background:rgba(0,0,0,0.05);}
+.pop_full_dn .btn_white{background-color:#ececec; color:#4a4a4a; float:left;}
+.pop_full_dn .btn_black{background-color:#4a4a4a; color:#fff; float:right;}
+
+/******************** 기본알림창 css ********************/
+.basic_header{position:relative; width:100%; height:auto; padding:0 15px; border-radius:5px 5px 0 0; box-sizing:border-box; background-color:#fff;}
+.basic_header h2{position:relative; width:100%; height:35px; margin:0; color:#4a4a4a; font-size:15px; line-height:35px; text-align:center;}
+.basic_header .pop_line{display:block; position:absolute; bottom:0; left:0; width:100%; height:2px;}
+
+.basic_content{position:relative; width:100%; height:auto; line-height:20px; padding:20px 15px; box-sizing:border-box; background-color:#fff; color:#000; text-align:center; font-size:14px;}
+
+/******************** 메시지 css ********************/
+.ms_content {position:relative; width:100%; height:auto; padding:0 5px; box-sizing:border-box; background:#fff;}
+.ms_content h3 {position:relative; width:100%; height:auto; line-height:35px; padding:3px 0 0 7px; color:#4a4a4a; font-size:14px; text-align:left; box-sizing:border-box; font-weight:bold; letter-spacing:-1px;}
+.ms_content h3 .fc_male, .ms_content h3 .fc_female{display:inline-block; vertical-align:top; max-width:30%; height:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+@media screen and (max-width:350px){
+	.ms_content h3 .fc_male, .ms_content h3 .fc_female{max-width:10%;}	
+}
+@media screen and (min-width:351px) and (max-width:380px) {
+	.ms_content h3 .fc_male, .ms_content h3 .fc_female{max-width:20%;}	
+}
+.ms_content h3 .ms_info{font-size:12px; font-weight:bold; color:#7a7a7a}
+
+.ms_box {position:relative; width:100%; height:auto; padding:3px 0px 25px 0px; box-sizing:border-box;}
+.ms_photo {position:absolute; top:0px; left:0px; width:71px; height:71px; padding:7px; box-sizing:border-box; z-index:10;}
+.ms_photo .photo_clip {width:100%; height:100%; border-radius:50%; background:#fff; overflow:hidden;}
+.ms_photo .photo_clip img {width:100%; height:100%;}
+.ms_photo .photo_change{position:absolute; bottom:3px; right:3px; z-index:10; width:26px; height:26px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_photo_change.png") no-repeat center center; background-size:contain;}
+.ms_txt {position:relative; width:100%; height:70px; padding:0 5px 0px 76px; box-sizing:border-box;}
+.ms_txt textarea{display:block; width:100%; height:100%; padding:5px 10px; border:1px solid #d5d5d5; border-radius:3px; outline:none; background-color:#f6f6f6; font-size:14px; line-height:20px; color:#000; box-sizing:border-box;resize:none!important;}
+.ms_txt .ms_count{position:absolute; bottom:-14px; right:5px; width:auto; height:12px; color:#4a4a4a; font-size:12px; line-height:12px;}
+
+.ms_content .btn_block{position:absolute; top:6px; right:10px; width:40px; height:30px; line-height:30px; border:1px solid #d5d5d5; border-radius:3px; box-sizing:border-box; background-color:#fff; color:#575757; text-align:center; font-size:13px; font-weight:bold; cursor:pointer;}
+.ms_content .btn_block:active{background:#f7f7f7;}
+.ms_full_txt{position:relative; width:100%; height:auto; padding:3px 5px 15px 5px; box-sizing:border-box;}
+.ms_full_txt .full_txt{display:block; width:100%; height:70px; padding:5px 10px; border:1px solid #d5d5d5; border-radius:3px; outline:none; background-color:#f6f6f6; color:#000; font-size:14px; font-family:'NanumSquare'; line-height:20px; box-sizing:border-box;}
+
+/******************** 청소년 알림창 css ********************/
+.adult_wrap{position:absolute; z-index:1000; width:92%; height:auto; left:50%; top:50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); padding:15px 0; background:rgba(0,0,0,0.85); overflow:hidden;}
+.adult_title{position:relative; width:100%; height:37px; background:#fff url("http://image.club5678.com/imgs/quick_talk/img01/img_adult_title.png") no-repeat center center; background-size:269px 24px;}
+
+.adult_content{position:relative; width:100%; height:auto; line-height:19px; padding:10px; box-sizing:border-box; color:#fff; font-size:13px; text-align:left; letter-spacing:-0.5px;}
+
+.adult_dn{position:relative; position:relative; width:100%; height:auto;}
+.adult_dn .btn_confirm{width:25%; height:33px; line-height:33px; margin:0 auto 5px auto; border:1px solid #bababa; border-radius:3px; background-color:#fff; overflow:hidden;}
+.adult_dn .btn_confirm a{display:block; width:100%; height:100%; color:#575757; font-size:14px; font-weight:bold; text-align:center;}
+.adult_dn .btn_confirm a:active{background:rgba(0,0,0,0.05);}
+.adult_dn .oneweek_chk{position:relative; width:205px; height:auto; margin:0 auto;}
+.adult_dn .oneweek_chk label{color:#fff; font-size:13px;}
+
+/******************** 신고하기 css ********************/
+.pop_header h2 .small{font-size:14px;}
+
+.rept_content{position:relative; width:100%; height:auto; background-color:#fff;}
+.rept_content .rept_raio{position:relative; width:100%; height:auto; border-bottom:1px solid #d5d5d5;}
+.rept_content label{height:40px; line-height:40px; padding-left:15px; padding-right:25px; color:#4a4a4a; font-size:14px; font-weight:bold; background: url(http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png) no-repeat 92% center; background-size: 15px 15px;}
+.rept_content input:checked+label{height:35px; line-height:35px; padding-left:15px; padding-right:25px; background: url(http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png) no-repeat 92% center; background-size: 15px 15px;}
+.rept_content .rept_txtbox{position:relative; width:100%; height:auto; padding:5px 15px 9px 15px; box-sizing:border-box;}
+.rept_content .rept_txtbox p{width:100%; height:25px; line-height:25px; font-size:13px; font-weight:bold;}
+.rept_content .rept_textarea{position:relative; width:100%; height:50px; padding:5px; border-radius:3px; border:1px solid #d5d5d5; box-sizing:border-box; background-color:#f6f6f6}
+.rept_content .rept_textarea textarea{width:100%; height:100%; line-height:20px; border:none; background-color:#f6f6f6; color:#4a4a4a; font-size:14px; outline:none; resize:none; box-shadow:none; appearance:none; -webkit-appearance:none; -moz-appearance:none;}
+
+/******************** 리워드 알림 css ********************/
+.rewrd_h2{padding:0; text-align:center;}
+
+.rewrd_content{position:relative; width:100%; height:auto; padding:10px; box-sizing:border-box; background-color:#fff;}
+.rewrd_content table{position:relative; width:100%; height:auto; background-color:#f6f6f6; border:1px solid #d5d5d5; box-sizing:border-box;}
+.rewrd_content table tr{position:relative; width:100%; height:30px; line-height:30px; border-bottom:1px solid #d5d5d5;}
+.rewrd_content table tr:last-of-type{border-bottom:none;}
+.rewrd_content table td{height:100%; font-size:14px; font-weight:bold;}
+.rewrd_content table .first_td{width:30%; border-right:1px solid #d5d5d5; box-sizing:border-box; color:#4a4a4a; text-align:center;}
+.rewrd_content table .last_td{width:70%; padding-right:10px; box-sizing:border-box; color:#fb1d37; text-align:right;}
+.rewrd_content p{width:100%; height:30px; line-height:30px; padding-top:5px; color:#4a4a4a; text-align:center; font-size:17px; font-weight:bold;}
+
+.pop_dn .btn_rewrd{width:50%; height:40px; line-height:40px; margin:0 auto; border-radius:3px; background-color:#4a4a4a; overflow:hidden;}
+.pop_dn .btn_rewrd a{display:block; width:100%; height:100%; font-size:15px; font-weight:bold; color:#fff; text-align:center;}
+
+/******************** 영상채팅 신청 css ********************/
+.pn_wrap{width:320px;}
+@media screen and (max-width:350px){
+	.pn_wrap{width:290px;}
+}
+.ta_left{text-align:left;}
+
+.pvr_content{position:relative; width:100%; height:auto; background-color:#fff;}
+.pvr_content .pvr_jewel{position:relative; width:100%; height:33px; line-height:32px; padding:0 125px 0 15px; box-sizing:border-box; color:#4a4a4a; font-size:14px; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.pvr_content .my_jewel{position:absolute; top:0; right:10px; width:auto; height:100%; line-height:30px; padding-left:18px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_jewel.png") left center no-repeat; background-size:16px 14px;}
+.pvr_content .my_jewel .color_jewel{color:#f97895;}
+.pvr_content .pop_line{position:absolute; bottom:0px; left:0px; width:100%; height:1px;}
+
+.pvr_content .photo_wrap{position:absolute; top:12px; left:10px; width:71px; height:71px; padding:7px; box-sizing:border-box;}
+.pvr_content .photo_clip{width:100%; height:100%; border-radius:100%; overflow:hidden;}
+.pvr_content .photo_clip img{display:block; width:100%; height:100%;}
+
+.pvr_box{position:relative; width:100%; height:auto; padding:12px 10px; box-sizing:border-box;}
+.pvr_box .pvr_info{position:relative; width:100%; height:71px; line-height:19px; padding:5px 0 5px 75px; box-sizing:border-box; font-size:14px;}
+.pvr_box .fc_male, .pvr_box .fc_female{width:100%; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.pvr_box .pvr_loca{width:100%; padding-left:10px; box-sizing:border-box; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_main_loca.png") no-repeat left center; background-size:8px 11px; color:#535359; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.pvr_box .pvr_txt{width:100%; padding-top:4px; color:#000; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.pn_box{position:relative; width:100%; height:auto; padding:10px 0; box-sizing:border-box; text-align:center;}
+.pn_box .photo_wrap{position:relative; top:0; left:0; display:inline-block; vertical-align:middle; width:64px; padding:7px 7px 7px 0;}
+.pn_box .pn_info{position:relative; display:inline-block; vertical-align:middle; width:auto; height:71px; line-height:20px; padding:14px 0; box-sizing:border-box; font-size:15px;}
+.pn_box .fc_male, .pn_box .fc_female{font-weight:bold;}
+.pn_box .pn_loca{width:auto; padding:2px 0 0 10px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_main_loca.png") no-repeat left center; background-size:8px 11px; color:#4a4a4a;}
+.pn_box .pn_notice{position:relative; width:100%; height:33px; line-height:33px; color:#4a4a4a; font-weight:bold; font-size:18px;}
+.pn_box .pn_count{position:relative; width:100%; height:33px; line-height:33px; padding-bottom:5px; color:#fa4645; font-weight:bold; font-size:26px;}
+.pn_box .pn_auto{position:relative; width:100%; height:25px; line-height:25px; color:#000; font-size:14px;}
+
+.pop_full_dn .pn_btn{width:100%;}
+.pn_dn{position:relative; width:100%; height:auto; padding:0 15px 10px 15px; border-radius:0 0 5px 5px; background:#fff; box-sizing:border-box; overflow:hidden;}
+.pn_dn:after{content:""; display:block; clear:both;}
+.pn_dn > div{width:33.3333%; height:auto; line-height:20px; padding-top:60px; color:#707070; text-align:center; font-size:15px; font-weight:bold; float:left; cursor:pointer;}
+.pn_dn .pn_call{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_native_call.png") no-repeat center top; background-size:55px 55px;}
+.pn_dn .pn_block{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_native_block.png") no-repeat center top; background-size:55px 55px;}
+.pn_dn .pn_refuse{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_native_refuse.png") no-repeat center top; background-size:55px 55px;}
