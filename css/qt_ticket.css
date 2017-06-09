@@ -57,8 +57,8 @@ h2{position:relative; width:100%; height:40px; line-height:40px; padding:0 20px;
 .fc_purple{color:#5461d7}
 .jewel_padd{padding:0 10px;}
 .jewel_wrap{position:relative; width:100%; height:auto; padding:15px 10px; box-sizing:border-box; background-color:#fff;}
-.jewel_wrap .jewel_title{position:absolute; top:15px; left:10px; width:63px; height:42px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_pay_jewel.png") no-repeat center center; background-size:63px 24px;}
-.jewel_wrap .jewel_expl{position:relative; width:100%; min-height:42px; line-height:21px; padding-left:78px; box-sizing:border-box; color:#535359; font-size:13px;}
+.jewel_wrap .jewel_title{position:absolute; top:15px; left:10px; width:63px; height:38px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_pay_jewel.png") no-repeat center center; background-size:63px 24px;}
+.jewel_wrap .jewel_expl{position:relative; width:100%; min-height:38px; line-height:19px; padding-left:78px; box-sizing:border-box; color:#535359; font-size:13px;}
 .jewel_wrap .point_expl{position:relative; width:100%; height:auto; line-height:22px; padding:5px 3px 0 3px; box-sizing:border-box; color:#535359; font-size:13px;}
 .jewel_wrap .btn_more{cursor:pointer; padding:0 7px;}
 .jewel_wrap .point_more{display:none; width:100%; height:auto; line-height:18px; padding:5px 3px 0 3px; box-sizing:border-box; color:#535359; font-size:13px;}

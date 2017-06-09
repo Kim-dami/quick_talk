@@ -33,6 +33,9 @@
 
 /******************** 글쓰기 영역 ********************/
 .txt_wrap{position:relative; width:100%; height:auto; padding:13px 16px; box-sizing:border-box; border-top:1px solid #c9c9c9; border-bottom:1px solid #c9c9c9; background-color:#e7e7e7;}
+@media screen and (max-width:350px){
+	.txt_wrap{padding:13px 10px;}
+}
 .txt_wrap .txt_box{position:relative; width:100%; height:95px; padding:8px 10px; border:1px solid #d3d3d3; border-radius:3px; box-sizing:border-box; background-color:#fff;}
 .txt_wrap textarea{width:100%; height:100%; line-height:21px; border:none; background-color:#fff; color:#4a4a4a; font-size:14px; outline:none; resize:none; box-shadow:none; appearance:none; -webkit-appearance:none; -moz-appearance:none;}
 
