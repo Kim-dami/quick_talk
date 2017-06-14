@@ -27,7 +27,7 @@ q:before, q:after {content:''; content:none;}
 dl, menu, ol, ul {margin:0; padding:0;}
 ol,ul,li {list-style:none;}
 nav ul, nav ol {list-style:none; list-style-image:none;}
-button, input, select, textarea {margin:0; font-size:100%; font-family:"맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, Gulim, Helvetica, sans-serif; vertical-align:middle; outline:none; appearance:none; -webkit-appearance:none; -o-appearance:none; -moz-appearance:none; -ms-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
+button, input, select, textarea {margin:0; outline:none; font-size:100%; font-family:"맑은 고딕", "Malgun Gothic", 돋움, Dotum, 굴림, Gulim, Helvetica, sans-serif; vertical-align:middle; appearance:none;-webkit-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); -o-appearance:none; -moz-appearance:none; -ms-appearance:none;}
 input::-ms-clear {display:none;}
 select::-ms-expand {display:none;}
 button {overflow:visible; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
@@ -36,7 +36,7 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {overf
 button[disabled],html input[disabled] {cursor:default;}
 button::-moz-focus-inner,input::-moz-focus-inner {padding:0; border:0;}
 input {line-height:normal;}
-input[type="search"] {box-sizing:content-box; -webkit-appearance:textfield; -webkit-box-sizing:content-box; -moz-box-sizing:content-box;}
+input[type="search"] {box-sizing:content-box;-webkit-appearance:textfield; -webkit-box-sizing:content-box; -moz-box-sizing:content-box;}
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
 input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height:auto;}
 fieldset {margin:0; padding:0; border:none; outline:none;}
@@ -50,178 +50,192 @@ td,th {padding:0;}
 /*
  ** 컬러 **
           */
-.bg_main{background-color:#ff5548;}
-.bg_main_btn{background-color:#4a4a4a;}
-.bg_male{background-color:#27a9d9;}
-.bg_female{background-color:#e6538d;}
-.bg_my{background-color:#5461d7;}
-.bg_dark_purple{background-color:#60649e;}
-.bg_video{background-color:#7c86e9;}
-.fc_female{color:#e6538d;}
-.fc_male{color:#27a9d9;}
-.img_male{border:2px solid #27a9d9; box-sizing:border-box; box-shadow:2px 2px 3px #cddde3;}
-.img_female{border:2px solid #e6538d; box-sizing:border-box; box-shadow:2px 2px 3px #e9d1da;}
-.bg_white_btn{background-color:#fff; border:1px solid #bababa; border-radius:3px; box-sizing:border-box;}
-	  
+.bg_main {background-color:#ff5548;}
+.bg_main_btn {background-color:#4a4a4a;}
+.bg_male {background-color:#27a9d9;}
+.bg_female {background-color:#e6538d;}
+.bg_my {background-color:#5461d7;}
+.bg_dark_purple {background-color:#60649e;}
+.bg_video {background-color:#7c86e9;}
+.fc_female {color:#e6538d;}
+.fc_male {color:#27a9d9;}
+.img_male {border:2px solid #27a9d9; box-shadow:2px 2px 3px #cddde3; box-sizing:border-box;}
+.img_female {border:2px solid #e6538d; box-shadow:2px 2px 3px #e9d1da; box-sizing:border-box;}
+.bg_white_btn {border:1px solid #bababa; border-radius:3px; background-color:#fff; box-sizing:border-box;}
+
 /*
  ** 빠른만남 공통 css **
           */
-#wrap{position:relative; width:100%; height:100%; overflow-y:auto; overflow-x:hidden;}
-#container{position:relative; width:100%; height:auto;}
-.hidden{display:none;}
-.blind{position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
+#wrap {position:relative; width:100%; height:100%; overflow-y:auto;overflow-x:hidden;}
+#container {position:relative; width:100%; height:auto;}
+.hidden {display:none;}
+.blind {position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0 0 0 0);}
 
 /* 헤더 */
-.hd_main{display:block; width:100%; height:55px; line-height:55px;}
-.hd_sub{display:block; width:100%; height:45px; line-height:45px;}
-.hd_fix{position:fixed; top:0; left:0; right:0; z-index:200;}
-.hd_relat{position:relative; z-index:200;}
-.main_logo{position:relative; width:100%; height:100%; line-height:55px; font-size:20px; padding:0px 260px 0px 15px; box-sizing:border-box; color:#fff; font-weight:bold;}
-.main_nav{position:absolute; top:0; right:0; width:260px; height:100%;}
-.main_nav li{position:relative; width:65px; height:100%; float:left;}
-.main_nav .nav_on{background-color:#d92f22;}
-.main_nav li a{display:block; width:100%; height:100%; font-size:13px; line-height:13px; padding-top:33px; box-sizing:border-box; text-align:center; color:#fff; font-weight:bold;}
-.main_nav .nav_talk a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_talk.png") no-repeat center 10px; background-size:19px 19px;}
-.main_nav .nav_video a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_video.png") no-repeat center 10px; background-size:14px 17px;}
-.main_nav .nav_friend a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_friend.png") no-repeat center 10px; background-size:17px 17px;}
-.main_nav .nav_more a{background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_nav_more.png") no-repeat center 18px; background-size:23px 5px;}
-@media screen and (max-width:350px){
-	.main_logo{padding:0 220px 0 12px;}
-	.main_nav{width:220px;}
-	.main_nav li{width:55px;}
+.hd_main {display:block; width:100%; height:55px; line-height:55px;}
+.hd_sub {display:block; width:100%; height:45px; line-height:45px;}
+.hd_fix {position:fixed; z-index:200; top:0; left:0; right:0;}
+.hd_relat {position:relative; z-index:200;}
+.main_logo {position:relative; width:100%; height:100%; padding:0px 260px 0px 15px; color:#fff; font-size:20px; font-weight:bold; line-height:55px; box-sizing:border-box;}
+.main_nav {position:absolute; top:0; right:0; width:260px; height:100%;}
+.main_nav li {position:relative; float:left; width:65px; height:100%;}
+.main_nav .nav_on {background-color:#d92f22;}
+.main_nav li a {display:block; width:100%; height:100%; padding-top:33px; color:#fff; font-size:13px; font-weight:bold; text-align:center; line-height:13px; box-sizing:border-box;}
+.main_nav .nav_talk a {background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_nav_talk.png") no-repeat center 10px; background-size:19px 19px;}
+.main_nav .nav_video a {background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_nav_video.png") no-repeat center 10px; background-size:14px 17px;}
+.main_nav .nav_friend a {background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_nav_friend.png") no-repeat center 10px; background-size:17px 17px;}
+.main_nav .nav_more a {background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_nav_more.png") no-repeat center 18px; background-size:23px 5px;}
+@media screen and (max-width:350px) {
+.main_logo {padding:0 220px 0 12px;}
+.main_nav {width:220px;}
+.main_nav li {width:55px;}
 }
-@media screen and (max-width:370px) and (min-width:351px){
-	.main_logo{padding:0px 240px 0px 15px;}
-	.main_nav{width:240px;}
-	.main_nav li{width:60px;}
+@media screen and (max-width:370px) and (min-width:351px) {
+.main_logo {padding:0px 240px 0px 15px;}
+.main_nav {width:240px;}
+.main_nav li {width:60px;}
 }
-.sub_h1{position:relative; width:100%; height:100%; color:#fff; text-align:center; font-size:18px; font-weight:bold;}
-.hd_btn{position:absolute; top:0; z-index:10; width:45px; height:45px;}
-.hd_btn a{display:block; width:100%; height:100%;}
-.hd_btn a:active{background:rgba(0,0,0,0.05);}
-.btn_back{left:0; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_back.png") no-repeat center center; background-size:17px 14px;}
-
+.sub_h1 {position:relative; width:100%; height:100%; color:#fff; font-size:18px; font-weight:bold; text-align:center;}
+.hd_btn {position:absolute; z-index:10; top:0; width:45px; height:45px;}
+.hd_btn a {display:block; width:100%; height:100%;}
+.hd_btn a:active {background:rgba(0,0,0,0.05);}
+.btn_back {left:0; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_back.png") no-repeat center center; background-size:17px 14px;}
 
 /* 상단 영역 */
-.top_section{position:fixed; top:55px; left:0; right:0; z-index:100; width:100%; height:auto; background-color:#fff; border-bottom:2px solid #ff5548; box-shadow:0 1px 10px rgba(0,0,0,0.3);}
-.top_section:after{content:""; display:block; clear:both;}
-.top_section .filter_wrap{position:relative; width:auto; height:40px; padding:5px; box-sizing:border-box; float:left;}
-.top_section .align_filter{width:95px; height:auto; margin-right:5px; float:left;}
-.top_section .gender_filter{width:60px; height:auto; float:left;}
-.top_section select{display:block; width:100%; height:30px; line-height:28px; padding:0 18px 0 6px; color:#575757; font-size:14px; background-image:url("http://image.club5678.com/imgs/quick_talk/img01/ico_main_slct.png"); background-repeat:no-repeat; background-size:8px 5px;}
-.top_section .align_filter select{background-position:78px center;}
-.top_section .gender_filter select{background-position:43px center;}
-.top_section .top_btn_wrap{position:relative; width:auto; height:40px; padding:5px; box-sizing:border-box; float:right;}
-.top_section .top_btn{width:auto; height:100%; border-radius:3px; float:left;}
-.top_section .top_btn:first-of-type{margin-right:5px;}
-.top_section .top_btn a{display:block; width:auto; height:100%; line-height:30px; padding:0 12px; text-align:center; color:#fff; font-size:14px; font-weight:bold;}
-.top_section .top_btn a:active{background:rgba(0,0,0,0.1);}
+.top_section {position:fixed; z-index:100; top:55px; left:0; right:0; width:100%; height:auto; border-bottom:2px solid #ff5548; background-color:#fff; box-shadow:0 1px 10px rgba(0,0,0,0.3);}
+.top_section:after {display:block; clear:both; content:"";}
+.top_section .filter_wrap {position:relative; float:left; width:auto; height:40px; padding:5px; box-sizing:border-box;}
+.top_section .align_filter {float:left; width:95px; height:auto; margin-right:5px;}
+.top_section .gender_filter {float:left; width:60px; height:auto;}
+.top_section select {display:block; width:100%; height:30px; padding:0 18px 0 6px; background-image:url("http://image.club7979.com/imgs/quick_talk/img01/ico_main_slct.png"); background-repeat:no-repeat; background-size:8px 5px; color:#575757; font-size:14px; line-height:28px;}
+.top_section .align_filter select {background-position:78px center;}
+.top_section .gender_filter select {background-position:43px center;}
+.top_section .top_btn_wrap {position:relative; float:right; width:auto; height:40px; padding:5px; box-sizing:border-box;}
+.top_section .top_btn {float:left; width:auto; height:100%; border-radius:3px;}
+.top_section .top_btn:first-of-type {margin-right:5px;}
+.top_section .top_btn a {display:block; width:auto; height:100%; padding:0 12px; color:#fff; font-size:14px; font-weight:bold; text-align:center; line-height:30px;}
+.top_section .top_btn a:active {background:rgba(0,0,0,0.1);}
 
 /* 영상룸 상단_보석포인트정보 */
-.video_header{width:100%; height:auto; top:55px; left:0; right:0; z-index:200; border-bottom:1px solid #bababa; background:#ececec; overflow:auto; clear:both;}
-.video_header .my_jewel{float:left; width:auto; height:auto; margin-left:4px; font-size:13px; font-weight:bold;}
-.video_header .my_jewel span.ico_jewel{float:left; padding-right:18px; margin-right:3px; background:url(http://image.club5678.com/imgs/quick_talk/img01/ico_jewel.png) right center no-repeat; background-size:15px 13px; line-height:40px;}
-.video_header .my_jewel span.color_jewel{float:left; color:#f97895; line-height:40px;}
-.video_header .my_point{float:right; width:auto; margin-right:4px; height:auto; font-size:13px; font-weight:bold; line-height:40px;}
-.video_header .my_point span{float:left; margin-right:3px;}
-.video_header .my_point span.color_point{margin-right:0; color:#9f9dff; line-height:40px;}
-.video_header .btn_white{float:right; position:relative; width:36px; height:28px; margin:6px 0; margin-left:3px;}
-.video_header .btn_white a{display:block; width:100%; height:100%; border-radius:3px; line-height:26px; text-align:center; font-size:13px; font-weight:bold; box-sizing:border-box;}
-.video_header .btn_white a:active{background:#f7f7f7;}
+.video_header {z-index:200; top:55px; left:0; right:0; clear:both; width:100%; height:auto; overflow:auto; border-bottom:1px solid #bababa; background:#ececec;}
+.video_header .my_jewel {float:left; width:auto; height:auto; margin-left:4px; font-size:13px; font-weight:bold;}
+.video_header .my_jewel span.ico_jewel {float:left; margin-right:3px; padding-right:18px; background:url(http://image.club7979.com/imgs/quick_talk/img01/ico_jewel.png) right center no-repeat; background-size:15px 13px; line-height:40px;}
+.video_header .my_jewel span.color_jewel {float:left; color:#f97895; line-height:40px;}
+.video_header .my_point {float:right; width:auto; height:auto; margin-right:4px; font-size:13px; font-weight:bold; line-height:40px;}
+.video_header .my_point span {float:left; margin-right:3px;}
+.video_header .my_point span.color_point {margin-right:0; color:#9f9dff; line-height:40px;}
+.video_header .btn_white {position:relative; float:right; width:36px; height:28px; margin:6px 0; margin-left:3px;}
+.video_header .btn_white a {display:block; width:100%; height:100%; border-radius:3px; font-size:13px; font-weight:bold; text-align:center; line-height:26px; box-sizing:border-box;}
+.video_header .btn_white a:active {background:#f7f7f7;}
 
-@media(min-width:360px){
-.video_header .my_jewel{margin-left:6px; font-size:14px;}
-.video_header .my_point{margin-right:6px; font-size:14px;}
-.video_header .my_jewel span.ico_jewel{margin-right:4px;}
-.video_header .btn_white{width:42px; margin-left:4px;}
-.video_header .btn_white a{font-size:14px;}
+@media(min-width:360px) {
+.video_header .my_jewel {margin-left:6px; font-size:14px;}
+.video_header .my_point {margin-right:6px; font-size:14px;}
+.video_header .my_jewel span.ico_jewel {margin-right:4px;}
+.video_header .btn_white {width:42px; margin-left:4px;}
+.video_header .btn_white a {font-size:14px;}
 }
 
 /*
  ** 체크박스 및 라디오버튼 **
           */
 /* 체크박스_01 */
-.chk_lst01{position:relative; width:100%; height:30px; padding:0 4px; line-height:30px; text-align:left; box-sizing:border-box; cursor:pointer;}
-.chk_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
-.chk_lst01 label{display:block; width:auto; height:auto; line-height:30px; padding-left:24px; cursor:pointer; font-size:12px; background:url("http://image.club5678.com/imgs/quick_talk/img01/chkbox01_off.png") no-repeat left center; background-size:20px 20px; box-sizing:border-box;}
-.chk_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/chkbox01_on.png") no-repeat left center; background-size:20px 20px;}
-.chk_lst01 span.btn_terms{position:absolute; width:auto; height:auto; top:0; right:4px; line-height:30px; font-size:12px; font-weight:bold;}
-.chk_lst01 span.btn_terms a:active{color:#ff5548;}
+.chk_lst01 {position:relative; width:100%; height:30px; padding:0 4px; text-align:left; line-height:30px; cursor:pointer; box-sizing:border-box;}
+.chk_lst01 input {position:absolute; z-index:5; top:0; left:0; opacity:0; cursor:pointer;}
+.chk_lst01 label {display:block; width:auto; height:auto; padding-left:24px; background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_off.png") no-repeat left center; background-size:20px 20px; font-size:12px; line-height:30px; cursor:pointer; box-sizing:border-box;}
+.chk_lst01 input:checked+label {background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_on.png") no-repeat left center; background-size:20px 20px;}
+.chk_lst01 span.btn_terms {position:absolute; top:0; right:4px; width:auto; height:auto; font-size:12px; font-weight:bold; line-height:30px;}
+.chk_lst01 span.btn_terms a:active {color:#ff5548;}
 
 /* 체크박스_02 */
-.chk_lst02{position:relative; width:100%; height:auto; cursor:pointer;}
-.chk_lst02 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
-.chk_lst02 label{display:block; width:100%; height:20px; line-height:20px; cursor:pointer; background:url("http://image.club5678.com/imgs/quick_talk/img01/chkbox02_off.png") no-repeat left center; background-size:20px 20px; box-sizing:border-box;}
-.chk_lst02 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/chkbox02_on.png") no-repeat left center; background-size:20px 20px;}
+.chk_lst02 {position:relative; width:100%; height:auto; cursor:pointer;}
+.chk_lst02 input {position:absolute; z-index:5; top:0; left:0; opacity:0; cursor:pointer;}
+.chk_lst02 label {display:block; width:100%; height:20px; background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox02_off.png") no-repeat left center; background-size:20px 20px; line-height:20px; cursor:pointer; box-sizing:border-box;}
+.chk_lst02 input:checked+label {background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox02_on.png") no-repeat left center; background-size:20px 20px;}
 
 /* 라디오버튼_01 */
-.radio_lst01{position:relative; width:100%; height:auto; cursor:pointer;}
-.radio_lst01 input{position:absolute; top:0; left:0; opacity:0; cursor:pointer; z-index:5;}
-.radio_lst01 label{display:block; width:100%; height:27px; line-height:27px; padding-left:24px; cursor:pointer; background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; box-sizing:border-box;}
-.radio_lst01 input:checked+label{background:url("http://image.club5678.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
+.radio_lst01 {position:relative; width:100%; height:auto; cursor:pointer;}
+.radio_lst01 input {position:absolute; z-index:5; top:0; left:0; opacity:0; cursor:pointer;}
+.radio_lst01 label {display:block; width:100%; height:27px; padding-left:24px; background:url("http://image.club7979.com/imgs/quick_talk/img01/radio01_off.png") no-repeat left center; background-size:15px 15px; line-height:27px; cursor:pointer; box-sizing:border-box;}
+.radio_lst01 input:checked+label {background:url("http://image.club7979.com/imgs/quick_talk/img01/radio01_on.png") no-repeat left center; background-size:15px 15px;}
 
 /*
  ** 플로팅버튼 **
           */
-.float_wrap{position:fixed; right:10px; bottom:50px; z-index:300; width:50px; height:auto;}
-.float_bg_modal{display:none; position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
-.float_btn {position:relative; width:50px; height:50px; border-radius:100%; background:#ff5548 url("http://image.club5678.com/imgs/quick_talk/img01/ico_floating.png") no-repeat center center; background-size:20px 20px; box-shadow:1px 2px 6px rgba(0,0,0,0.3); transition:0.2s transform ease-in-out; cursor:pointer;}
-.float_write{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
-.float_write a{display:block; width:25%; height:100%; border-radius:100%; box-shadow:1px 2px 6px rgba(0,0,0,0.3); float:left; background:#fff url("http://image.club5678.com/imgs/quick_talk/img01/ico_float_write.png") center center no-repeat; background-size:21px 20px;}
-.float_write a:active{background-color:#efefef;}
-.float_set{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
-.float_set a{display:block; width:25%; height:100%; border-radius:100%; box-shadow:1px 2px 6px rgba(0,0,0,0.3); float:left; background:#fff url("http://image.club5678.com/imgs/quick_talk/img01/ico_float_sett.png") center center no-repeat; background-size:24px 24px;}
-.float_set a:active{background-color:#efefef;}
+.float_wrap {position:fixed; z-index:300; right:10px; bottom:50px; width:50px; height:auto;}
+.float_bg_modal {display:none; position:fixed; top:0; left:0; right:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.7);}
+.float_btn {position:relative; width:50px; height:50px; border-radius:100%; background:#ff5548 url("http://image.club7979.com/imgs/quick_talk/img01/ico_floating.png") no-repeat center center; background-size:20px 20px; box-shadow:1px 2px 6px rgba(0,0,0,0.3); cursor:pointer; transition:0.2s transform ease-in-out;}
+.float_write {position:absolute; top:-25px; right:0px; width:400%; height:50px; opacity:0; line-height:50px; transform:scale(0);transform-origin:87.5% center;}
+.float_write a {display:block; float:left; width:25%; height:100%; border-radius:100%; background:#fff url("http://image.club7979.com/imgs/quick_talk/img01/ico_float_write.png") center center no-repeat; background-size:21px 20px; box-shadow:1px 2px 6px rgba(0,0,0,0.3);}
+.float_write a:active {background-color:#efefef;}
+.float_set {position:absolute; top:-25px; right:0px; width:400%; height:50px; opacity:0; line-height:50px; transform:scale(0);transform-origin:87.5% center;}
+.float_set a {display:block; float:left; width:25%; height:100%; border-radius:100%; background:#fff url("http://image.club7979.com/imgs/quick_talk/img01/ico_float_sett.png") center center no-repeat; background-size:24px 24px; box-shadow:1px 2px 6px rgba(0,0,0,0.3);}
+.float_set a:active {background-color:#efefef;}
 
-.float_txt{width:75%; height:100%; padding-right:12px; box-sizing:border-box; font-size:15px; color:#fff; font-weight:bold; text-align:right; float:left;}
+.float_txt {float:left; width:75%; height:100%; padding-right:12px; color:#fff; font-size:15px; font-weight:bold; text-align:right; box-sizing:border-box;}
 
 @keyframes up01 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-70px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-70px; opacity:1; transform:scale(1);}
 }
 @-webkit-keyframes up01 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-70px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-70px; opacity:1; transform:scale(1);}
 }
 @-ms-keyframes up01 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-70px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-70px; opacity:1; transform:scale(1);}
 }
 @-moz-keyframes up01 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-70px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-70px; opacity:1; transform:scale(1);}
 }
 @-o-keyframes up01 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-70px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-70px; opacity:1; transform:scale(1);}
 }
 @keyframes up02 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-140px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-140px; opacity:1; transform:scale(1);}
 }
 @-webkit-keyframes up02 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-140px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-140px; opacity:1; transform:scale(1);}
 }
 @-ms-keyframes up02 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-140px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-140px; opacity:1; transform:scale(1);}
 }
 @-moz-keyframes up02 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-140px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-140px; opacity:1; transform:scale(1);}
 }
 @-o-keyframes up02 {
-0% {top:-25px; transform:scale(0); opacity:0;}
-100% {top:-140px; transform:scale(1); opacity:1;}
+0% {top:-25px; opacity:0; transform:scale(0);}
+100% {top:-140px; opacity:1; transform:scale(1);}
 }
 
-.float_on .float_bg_modal{display:block;}
-.float_on .float_btn{transform:rotate(-135deg); -webkit-transform:rotate(-135deg); -o-transform:rotate(-135deg); -moz-transform:rotate(-135deg); -ms-transform:rotate(-135deg);}
-.float_on .float_write{top:-70px; transform:scale(1); opacity:1; animation:up01 0.2s ease-in-out 1;-webkit-animation:up01 0.2s ease-in-out 1; -o-animation:up01 0.2s ease-in-out 1; -moz-animation:up01 0.2s ease-in-out 1; -ms-animation:up01 0.2s ease-in-out 1;}
-.float_on .float_set{top:-140px; transform:scale(1); opacity:1; animation:up02 0.2s ease-in-out 1;-webkit-animation:up02 0.2s ease-in-out 1; -o-animation:up02 0.2s ease-in-out 1; -moz-animation:up02 0.2s ease-in-out 1; -ms-animation:up02 0.2s ease-in-out 1;}
+.float_on .float_bg_modal {display:block;}
+.float_on .float_btn {transform:rotate(-135deg);-webkit-transform:rotate(-135deg); -o-transform:rotate(-135deg); -moz-transform:rotate(-135deg); -ms-transform:rotate(-135deg);}
+.float_on .float_write {top:-70px; opacity:1; transform:scale(1);animation:up01 0.2s ease-in-out 1;-webkit-animation:up01 0.2s ease-in-out 1; -o-animation:up01 0.2s ease-in-out 1; -moz-animation:up01 0.2s ease-in-out 1; -ms-animation:up01 0.2s ease-in-out 1;}
+.float_on .float_set {top:-140px; opacity:1; transform:scale(1);animation:up02 0.2s ease-in-out 1;-webkit-animation:up02 0.2s ease-in-out 1; -o-animation:up02 0.2s ease-in-out 1; -moz-animation:up02 0.2s ease-in-out 1; -ms-animation:up02 0.2s ease-in-out 1;}
 
 /*
  ** 내역없음 **
           */
-.exclam_none{position:relative; width:100%; height:30px; line-height:30px; padding-top:200px; background:url("http://image.club5678.com/imgs/quick_talk/img01/ico_exclam.png") no-repeat center 90px; background-size:91px 91px; color:#787878; text-align:center; font-size:17px; font-weight:bold;}
+.exclam_none {position:relative; width:100%; height:30px; padding-top:200px; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_exclam.png") no-repeat center 90px; background-size:91px 91px; color:#787878; font-size:17px; font-weight:bold; text-align:center; line-height:30px;}
+
+/* cs_관리 관련 */
+
+.admin_badge { position:absolute; top:2px; left:-23px; }
+.cs_photo { width:20px; height:20px; position:relative; top:-37px; left:13px; }
+.cs_diy {width:20px; height:20px; position:relative; top:-37px; left:27px;  }
+.cs_modify_pop { width:80%; height:auto; overflow:hidden;position:absolute; z-index:1000; top:50%; left:50%; width:92%; height:auto; overflow:hidden; background:#fff; box-shadow:1px 1px 20px rgba(0,0,0,0.7); transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); }
+.cs_modify_pop .txt_head { width:100%; height:30px; background:#7d85ea; color:#fff; font-size:15px; font-weight:bold; line-height:30px; padding-left:20px; }
+.cs_modify_pop .content_txt { width:100%; height:132px; overflow:hidden; position:relative; }
+.cs_modify_pop .content_txt .pot_id { position:absolute; top:13px; left:15px; font-weight:bold; }
+.cs_modify_pop .content_txt .btn_black { display:inline-block; width:120px; height:25px; line-height:25px; background-color:#4a4a4a; font-size:13px; font-weight:bold; color:#fff; position:absolute; top:10px; right:10px; border-radius:3px; text-align:center; }
+.cs_modify_pop .content_txt .input_cs_txt { display:block; width:90%; height:44px; padding:5px 10px; border:1px solid #d5d5d5; border-radius:3px; outline:none; background-color:#f6f6f6; color:#000; font-size:12px; line-height:20px; box-sizing:border-box; resize:none; margin:45px auto 0px;}
+.cs_modify_pop .content_txt .btn_box { clear:both; display:block; width:100%; height:43px; margin:0; }
+.cs_modify_pop .content_txt .btn_box li { float:left; width:25%; display:inline-block; text-align:center; line-height:43px; }
+.cs_modify_pop .content_txt .btn_box li a { display:inline-block; width:80%; height:25px; line-height:25px; background-color:#7d85ea; color:#fff; border-radius:5px; font-size:12px; }

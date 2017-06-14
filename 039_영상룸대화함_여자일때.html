@@ -5,320 +5,368 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>빠른만남</title>
-
 <link href="css/qt_default.css" rel="stylesheet" type="text/css">
 <link href="css/qt_message.css" rel="stylesheet" type="text/css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body ontouchstart="">
 <div id="wrap">
 	<!-- 헤더 -->
 	<div id="header" class="hd_main hd_fix bg_main">
-    	<h1 class="main_logo">빠른만남</h1>
-        <!-- 네비 -->
-        <ul class="main_nav">
-        	<li class="nav_talk">
-            	<a href="#">토크룸</a>
-            </li>
-            <li class="nav_video nav_on">
-            	<a href="#">영상룸</a>
-            </li>
-            <li class="nav_friend">
-            	<a href="#">친구</a>
-            </li>
-            <li class="nav_more">
-            	<a href="#">더보기</a>
-            </li>
-        </ul>
-        <!-- // 네비 -->
-    </div>
-    <!-- // 헤더 -->
-    <!-- 상단 영역 -->
-    <div class="top_section">
-    	 <!-- 영상룸 상단 -->
+		<h1 class="main_logo">빠른만남</h1>
+		<!-- 네비 -->
+		<ul class="main_nav">
+			<li class="nav_talk">
+			<a href="#">토크룸</a>
+			</li>
+			<li class="nav_video nav_on">
+			<a href="#">영상룸</a>
+			</li>
+			<li class="nav_friend">
+			<a href="#">친구</a>
+			</li>
+			<li class="nav_more">
+			<a href="#">더보기</a>
+			</li>
+		</ul>
+		<!-- // 네비 -->
+	</div>
+	<!-- // 헤더 -->
+	<!-- 상단 영역 -->
+	<div class="top_section">
+		<!-- 영상룸 상단 -->
 		<div class="video_header">
 			<div class="my_jewel">
 				<span class="ico_jewel">보석</span>
 				<span class="color_jewel">10000개</span>
-				<div class="btn_white bg_white_btn"><a href="#">내역</a></div>
-				<div class="btn_white bg_white_btn"><a href="#">구매</a></div>
+				<div class="btn_white bg_white_btn">
+					<a href="#">내역</a>
+				</div>
+				<div class="btn_white bg_white_btn">
+					<a href="#">구매</a>
+				</div>
 			</div>
 			<div class="my_point">
 				<span>포인트</span>
 				<span class="color_point">10000점</span>
-				<div class="btn_white fl_r bg_white_btn"><a href="#">교환</a></div>
+				<div class="btn_white fl_r bg_white_btn">
+					<a href="#">교환</a>
+				</div>
 			</div>
 		</div>
 		<!-- 영상룸 상단 //-->
-    	<!-- 상단 필터 -->
-    	<div class="filter_wrap">
-        	<div class="align_filter">
-                <select class="bg_white_btn">
-                    <option>최근작성순</option>
-                    <option>나와 가까운순</option>
-                    <option>서울지역</option>
-                    <option>경기지역</option>
-                    <option>인천지역</option>
-                    <option>부산지역</option>
-                    <option>대전,충남지역</option>
-                    <option>대구,경북지역</option>
-                    <option>경남,울산지역</option>
-                    <option>광주,전남지역</option>
-                    <option>전북,전주지역</option>
-                    <option>강원,춘천지역</option>
-                    <option>제주,해외지역</option>
-                </select>
-            </div>
-            <div class="gender_filter">
-            	<select class="bg_white_btn">
-                	<option>전체</option>
-                    <option>남성</option>
-                    <option>여성</option>
-                </select>
-            </div>
-        </div>
-        <!-- // 상단 필터 -->
-        <!-- 상단 버튼 -->
-        <div class="top_btn_wrap">
-            <div class="top_btn bg_main_btn">
-                <a href="#">대화함</a>
-            </div>
-            <div class="top_btn bg_main_btn">
-                <a href="#">글쓰기</a>
-            </div>
-        </div>
-        <!-- // 상단 버튼 -->
-    </div>
-    <!-- // 상단 영역 -->
-    <div id="container" class="mt_138">
-    	<div class="vd_tap">
-    		<div class="tap_dial bg_video">대화상대</div>
-    		<div class="tap_block">차단상대</div>
-    	</div>
-    	<div class="vd_slctdel_wrap">
+		<!-- 상단 필터 -->
+		<div class="filter_wrap">
+			<div class="align_filter">
+				<select class="bg_white_btn">
+					<option>최근작성순</option>
+					<option>나와 가까운순</option>
+					<option>서울지역</option>
+					<option>경기지역</option>
+					<option>인천지역</option>
+					<option>부산지역</option>
+					<option>대전,충남지역</option>
+					<option>대구,경북지역</option>
+					<option>경남,울산지역</option>
+					<option>광주,전남지역</option>
+					<option>전북,전주지역</option>
+					<option>강원,춘천지역</option>
+					<option>제주,해외지역</option>
+				</select>
+			</div>
+			<div class="gender_filter">
+				<select class="bg_white_btn">
+					<option>전체</option>
+					<option>남성</option>
+					<option>여성</option>
+				</select>
+			</div>
+		</div>
+		<!-- // 상단 필터 -->
+		<!-- 상단 버튼 -->
+		<div class="top_btn_wrap">
+			<div class="top_btn bg_main_btn">
+				<a href="#">대화함</a>
+			</div>
+			<div class="top_btn bg_main_btn">
+				<a href="#">글쓰기</a>
+			</div>
+		</div>
+		<!-- // 상단 버튼 -->
+	</div>
+	<!-- // 상단 영역 -->
+	<div id="container" class="mt_138">
+		<div class="vd_tap">
+			<div class="tap_dial bg_video">
+				대화상대
+			</div>
+			<div class="tap_block">
+				차단상대
+			</div>
+		</div>
+		<div class="vd_slctdel_wrap">
 			<div class="chk_slctdel">
 				<div class="chk_lst02">
 					<input type="checkbox" id="whole_chk">
 					<label for="whole_chk"><span class="blind">전체선택</span></label>
 				</div>
 			</div>
-			<div class="btn_slctdel bg_white_btn">선택삭제</div>
+			<div class="btn_slctdel bg_white_btn">
+				선택삭제
+			</div>
 		</div>
-    	<!-- 날짜구분 -->
-    	<div class="db_day">
-    		<h2>2017년 5월 18일</h2>
-    		<ul>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk01">
-								<label for="indivi_chk01"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_male">
-								<img src="img/male01.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_male">윤두준(남/29세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  							<div class="vd_badge">99</div>
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-   					<!-- 영상통화 레이어 -->
-					<div class="layer_box">
-						<div class="layer_video">
-							<a href="#">대화하기</a>
-						</div>
-						<div class="layer_reque">
-							<a href="#">요청하기</a>
-						</div>
-						<div class="layer_clse">
-							<a href="#">닫기</a>
-						</div>
+		<!-- 날짜구분 -->
+		<div class="db_day">
+			<h2>2017년 5월 18일</h2>
+			<ul>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk01">
+						<label for="indivi_chk01"><span class="blind">개별선택</span></label>
 					</div>
-					<!-- // 영상통화 레이어 -->
-    			</li>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk02">
-								<label for="indivi_chk02"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_female">
-								<img src="img/female01.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_female">배수지(여/24세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-    			</li>
-    		</ul>
-    	</div>
-    	<!-- // 날짜구분 -->
-    	<!-- 날짜구분 -->
-    	<div class="db_day">
-    		<h2>2017년 5월 17일</h2>
-    		<ul>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk03">
-								<label for="indivi_chk03"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_female">
-								<img src="img/female02.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_female">이성경(여/28세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-    			</li>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk04">
-								<label for="indivi_chk04"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_female">
-								<img src="img/female03.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_female">박수진(여/33세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-    			</li>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk05">
-								<label for="indivi_chk05"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_male">
-								<img src="img/male02.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_male">이현우(남/25세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-    			</li>
-    			<li>
-    				<a href="#" class="vd_a">
-    					<!-- 개별 체크박스 -->
-						<div class="td_chk">
-							<div class="chk_lst02">
-								<input type="checkbox" id="indivi_chk06">
-								<label for="indivi_chk06"><span class="blind">개별선택</span></label>
-							</div>
-						</div>
-  						<!-- // 개별 체크박스 -->
-  						<!-- 상대 사진 -->
-  						<div class="photo_wrap">
-							<div class="photo_clip img_male">
-								<img src="img/male03.png" />
-							</div>
-						</div>
-  						<!-- // 상대 사진 -->
-  						<!-- 영상룸 대화 -->
-  						<div class="dial_box">
-  							<div class="fc_male">박서준(남/30세)</div>
-  							<div class="db_loca">경남>창원시 마산합포구</div>
-  							<div class="video_dial"><img src="http://image.club5678.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12" />영상채팅해요</div>
-  						</div>
-  						<!-- // 영상룸 대화 -->
-  						<!-- 버튼 및 뱃지 -->
-  						<div class="btn_video bg_video">
-  							<img src="http://image.club5678.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
-  						</div>
-  						<!-- // 버튼 및 뱃지 -->
-   					</a>
-    			</li>
-    		</ul>
-    	</div>
-    	<!-- // 날짜구분 -->
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_male">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/male01.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_male">
+						윤두준(남/29세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+					<div class="vd_badge">
+						99
+					</div>
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				<!-- 영상통화 레이어 -->
+				<div class="layer_box">
+					<div class="layer_video">
+						<a href="#">대화하기</a>
+					</div>
+					<div class="layer_reque">
+						<a href="#">요청하기</a>
+					</div>
+					<div class="layer_clse">
+						<a href="#">닫기</a>
+					</div>
+				</div>
+				<!-- // 영상통화 레이어 -->
+				</li>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk02">
+						<label for="indivi_chk02"><span class="blind">개별선택</span></label>
+					</div>
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/female01.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_female">
+						배수지(여/24세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				</li>
+			</ul>
+		</div>
+		<!-- // 날짜구분 -->
+		<!-- 날짜구분 -->
+		<div class="db_day">
+			<h2>2017년 5월 17일</h2>
+			<ul>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk03">
+						<label for="indivi_chk03"><span class="blind">개별선택</span></label>
+					</div>
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/female02.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_female">
+						이성경(여/28세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				</li>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk04">
+						<label for="indivi_chk04"><span class="blind">개별선택</span></label>
+					</div>
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_female">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/female03.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_female">
+						박수진(여/33세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				</li>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk05">
+						<label for="indivi_chk05"><span class="blind">개별선택</span></label>
+					</div>
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_male">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/male02.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_male">
+						이현우(남/25세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_outgo.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				</li>
+				<li>
+				<a href="#" class="vd_a">
+				<!-- 개별 체크박스 -->
+				<div class="td_chk">
+					<div class="chk_lst02">
+						<input type="checkbox" id="indivi_chk06">
+						<label for="indivi_chk06"><span class="blind">개별선택</span></label>
+					</div>
+				</div>
+				<!-- // 개별 체크박스 -->
+				<!-- 상대 사진 -->
+				<div class="photo_wrap">
+					<div class="photo_clip img_male">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/male03.png"/>
+					</div>
+				</div>
+				<!-- // 상대 사진 -->
+				<!-- 영상룸 대화 -->
+				<div class="dial_box">
+					<div class="fc_male">
+						박서준(남/30세)
+					</div>
+					<div class="db_loca">
+						경남>창원시 마산합포구
+					</div>
+					<div class="video_dial">
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_vd_recei.png" width="17" height="12"/>영상채팅해요
+					</div>
+				</div>
+				<!-- // 영상룸 대화 -->
+				<!-- 버튼 및 뱃지 -->
+				<div class="btn_video bg_video">
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_btn_video.png" width="9" height="12"/>영상통화
+				</div>
+				<!-- // 버튼 및 뱃지 -->
+				</a>
+				</li>
+			</ul>
+		</div>
+		<!-- // 날짜구분 -->
 	</div>
 </div>
 </body>

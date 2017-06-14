@@ -1,0 +1,42 @@
+*************** 토크룸 메인리스트 ***************
+https://kim-dami.github.io/quick_talk/012_토크룸리스트.html
+
+*************** 팝업 관련 ***************
+https://kim-dami.github.io/quick_talk/000_기본알림창.html
+https://kim-dami.github.io/quick_talk/011_메인_청소년알림창.html
+https://kim-dami.github.io/quick_talk/016_연락하기_남자.html
+https://kim-dami.github.io/quick_talk/016_연락하기_여자.html
+https://kim-dami.github.io/quick_talk/019_메시지_남자.html
+https://kim-dami.github.io/quick_talk/019_메시지_여자.html
+https://kim-dami.github.io/quick_talk/021_토크룸상세대화함_신고하기.html
+https://kim-dami.github.io/quick_talk/033_영상채팅신청_남자에게.html
+https://kim-dami.github.io/quick_talk/033_영상채팅신청_여자에게.html
+https://kim-dami.github.io/quick_talk/035_영상룸대화신청.html
+https://kim-dami.github.io/quick_talk/035_영상룸대화요청.html
+https://kim-dami.github.io/quick_talk/037_리워드알림창.html
+
+*************** 글등록 ***************
+https://kim-dami.github.io/quick_talk/014_토크룸글쓰기_등록글없음.html
+https://kim-dami.github.io/quick_talk/014_토크룸글쓰기_등록글있음.html
+https://kim-dami.github.io/quick_talk/038_영상룸글쓰기.html
+
+*************** 친구리스트 ***************
+https://kim-dami.github.io/quick_talk/052_토크룸친구리스트.html
+https://kim-dami.github.io/quick_talk/053_영상룸친구리스트.html
+https://kim-dami.github.io/quick_talk/053_영상룸친구리스트_여자일때.html
+
+*************** 이용권 ***************
+https://kim-dami.github.io/quick_talk/017_이용권구매.html
+https://kim-dami.github.io/quick_talk/018_코인충전.html
+https://kim-dami.github.io/quick_talk/042_보석구매.html
+
+*************** 대화함 ***************
+https://kim-dami.github.io/quick_talk/020_토크룸대화함.html
+https://kim-dami.github.io/quick_talk/020_토크룸대화함_대화없음.html
+https://kim-dami.github.io/quick_talk/021_토크룸상세대화함.html
+https://kim-dami.github.io/quick_talk/039_영상룸대화함.html
+https://kim-dami.github.io/quick_talk/039_영상룸대화함_대화없음.html
+https://kim-dami.github.io/quick_talk/039_영상룸대화함_여자일때.html
+https://kim-dami.github.io/quick_talk/039_영상룸대화함_차단상대.html
+https://kim-dami.github.io/quick_talk/039_영상룸대화함_차단상대없음.html
+https://kim-dami.github.io/quick_talk/040_영상룸상세대화함.html

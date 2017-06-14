@@ -1,0 +1,193 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>빠른만남</title>
+<link href="css/qt_default.css" rel="stylesheet" type="text/css">
+<link href="css/qt_payment.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body ontouchstart="">
+<div id="wrap" class="bg_white">
+	<!-- 헤더 -->
+	<div id="header" class="hd_sub hd_relat bg_main">
+		<div class="hd_btn btn_back">
+			<a href="#"><span class="blind">뒤로</span></a>
+		</div>
+		<h1 class="sub_h1">아이템 관리</h1>
+	</div>
+	<!-- // 헤더 -->
+	<div id="container">
+		<!-- 탭메뉴 시작 -->
+		<div class="tap_wrap">
+			<ul>
+				<li class="tap_on"><a href="#">영상채팅</a></li>
+				<li class="tap_off"><a href="#">처리현황</a></li>
+			</ul>
+		</div>
+		<!-- 탭메뉴 끝 -->
+		<!-- 적립금내역 시작 -->
+		<div class="my_money_box">
+			<p>
+				현재적립금액 <span class="won_num">
+				<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_withdraw_won.png" width="23" height="23">
+				<span>3,000,000원</span>
+				</span>
+				<a href="#" class="btn_detail_view btn_shadow">내역보기</a>
+			</p>
+		</div>
+		<!-- 적립금내역 끝 -->
+		<!-- 영상통화 출금신청/입금정보 전체 -->
+		<div class="withdraw_wrap">
+			<div class="withdraw_tit_txt">
+				<span class="main_txt">출금신청</span>
+				<span class="sub_txt">※ 1,000원 단위로 출금 신청 됩니다.</span>
+				<a href="#" class="btn_detail_view btn_shadow">이용안내</a>
+			</div>
+			<!-- 현금입금정보 -->
+			<div class="money_exch_wrap">
+				<div class="money_exch_box">
+					<ul class="tap_money">
+						<li class="money_tap_on"><a href="#">현금</a></li>
+						<li class="money_tap_off"><a href="#">페이팔</a></li>
+					</ul>
+					<div class="num_input_box">
+						<div class="jewel_exchange_box">
+							<p>
+								출금신청금액(원)
+							</p>
+							<input name="exbfMoney" id="exbfMoney" type="number" class="ex_money_num" onKeyUp="inputNumberFormat(this);" value="3000">
+						</div>
+						<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_jewel_arrow.gif" class="ico_jewel_arrow" width="11" height="19">
+						<div class="real_money_box">
+							<p>
+								실입금액(소득세3.3%)
+							</p>
+							<input name="exafMoney" id="exafMoney" type="text" class="real_money_num" placeholder="967,000" value="2,901" readonly>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 페이팔
+            <div class="money_exch_wrap">
+            	<div class="money_exch_box">
+                	<ul class="tap_money">
+                    	<li class="money_tap_off"><a href="#">현금</a></li>
+                        <li class="money_tap_on"><a href="#">페이팔</a></li>
+                    </ul>
+                    <div class="num_input_box">
+                    	<div class="jewel_exchange_box">
+					<p>출금신청금액(원)</p>
+					<input name="exbfMoney" id="exbfMoney" type="number" class="ex_money_num" onKeyUp="inputNumberFormat(this);" value="3000">
+					</div>
+					<img src="http://image.club7979.com/imgs/quick_talk/img01/ico_jewel_arrow.gif" class="ico_jewel_arrow" width="11" height="19">
+					<div class="real_money_box">
+					<p>실입금액(소득세0%)</p>
+					<input name="exafMoney" id="exafMoney" type="text" class="real_money_num" placeholder="967,000" value="2,901" readonly>
+					</div>
+                </div>
+            </div>
+            </div>
+             -->
+			<div class="withdraw_tit_txt">
+				<span class="main_txt">입금정보</span>
+				<a href="#" class="btn_detail_view btn_shadow">주의사항</a>
+			</div>
+			<!-- 입금정보 -->
+			<div class="payment_info_wrap">
+				<div class="payment_info_box">
+					<ul class="personal_info1">
+						<li class="info_tit">예금주</li>
+						<li class="srch_region">
+						<span class="bg_srch">
+						<a href="#" class="btn_srch">수정하기</a>
+						</span>
+						</li>
+					</ul>
+					<ul class="personal_info1">
+						<li class="info_tit">입금은행</li>
+						<select>
+							<option select="selected">은행명</option>
+							<option>광주</option>
+							<option>농협</option>
+							<option>국민</option>
+						</select>
+					</ul>
+					<ul class="personal_info1">
+						<li class="info_tit">계좌번호</li>
+						<li class="info_txtBox">
+						<input type="text" id="info_num1" placeholder="'-' 하이픈 입력">
+						</li>
+					</ul>
+					<ul class="personal_info1">
+						<li class="info_tit">주민번호</li>
+						<li class="info_txtBox2">
+						<input type="number" id="info_num2" placeholder="숫자만 입력"></li>
+						<li class="bullet_bar1">-</li>
+						<li class="info_txtBox2">
+						<input type="number" id="info_num3" placeholder="숫자만 입력">
+						</li>
+					</ul>
+					<ul class="personal_info1">
+						<li class="info_tit">전화번호</li>
+						<li class="info_txtBox3">
+						<select>
+							<option select="selected">010</option>
+							<option>011</option>
+							<option>016</option>
+						</select>
+						<span class="bullet_bar2">-</span>
+						<span class="info_num">
+						<input type="number" id="info_num4">
+						</span>
+						<span class="bullet_bar2">-</span>
+						<span class="info_num">
+						<input type="number" id="info_num5">
+						</span>
+						</li>
+					</ul>
+					<ul class="personal_info2">
+						<li class="info_tit">주소검색</li>
+						<li class="srch_region">
+						<span class="bg_srch">
+						<a href="#" class="btn_srch">주소검색</a>
+						</span>
+						<span class="txt_adress_add">
+						<input type="text" id="info_adress" class="" placeholder="">
+						</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 페이팔 입금정보
+      <div class="payment_info_wrap">
+        	<div class="payment_info_box">
+            	<p class="paypal_ment">- 국가별 페이팔 수수료가 발생됩니다.</p>
+                <p class="paypal_ment">- 지급소요 기간은 영업일 기준3일 소요됩니다.</p>
+                <strong class="paypal_ment">- 잘못된 페이팔 계정입력에 대한 어떠한 책임도 지지 않습니다.</strong>
+                <p class="paypal_ment" style="color:#F00; margin-bottom:10px">- 국내이용자는 환전불가</p>
+                <ul class="personal_info1">
+                 <li class="info_tit" style="font-size:11px; width:22%; ">페이팔계정</li>
+        		 <li class="info_txtBox" style="width:72%;">
+                 	<input type="text" id="info_num1" placeholder="'-' 하이픈 입력">
+                 </li>
+            </ul>
+            </div>
+      </div>
+		 -->
+			<div class="agree_wrap">
+				<a href="#" class="btn_agree_look">개인정보 수집 및 이용에 대한 안내 [보기]</a>
+				<label class="agree_chk_box1">
+				<input type="checkbox" class="chk_box1">
+				<span>개인정보 수집 및 이용에 동의합니다.</span>
+				</label>
+			</div>
+			<!-- 탭 페이팔 신청시 끝 -->
+			<a href="#" class="btn_signup">출금신청하기</a>
+			<!-- 하단신청하기 버튼 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

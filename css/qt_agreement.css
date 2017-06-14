@@ -1,0 +1,47 @@
+@charset "utf-8";
+body {background-color:#f7f3f1;}
+
+/*-------------------------------- 고객센터 ------------------------------*/
+.cc_logo {position:relative; width:100%; height:170px; background:url("http://image.club7979.com/imgs/quick_talk/img01/jn_logo.png") center center no-repeat; background-size:215px 92px;}
+.cc_contents {position:relative; width:100%; height:auto; padding:0 6%; box-sizing:border-box;}
+.cc_contents .cc_box_ment {position:relative; width:100%; height:auto; padding:68px 8px 14px 8px; border:1px solid #e0d0ca; border-radius:3px; background:#fff url('http://image.club7979.com/imgs/quick_talk/img01/ico_exclam1.png') center 14px no-repeat; background-size:38px 38px; color:#6b6b6b; font-size:12px; font-weight:bold; text-align:center; line-height:18px; box-sizing:border-box;}
+.cc_contents .btn_send_mail {position:relative; width:100%; height:44px; margin:14px 0 10px 0; border-radius:3px; line-height:44px;}
+.cc_contents .btn_send_mail a {display:block; width:100%; height:100%; border-radius:3px; color:#fff; font-size:15px; font-weight:bold; text-align:center;}
+.cc_contents .btn_send_mail a:active {background-color:#5c609a;}
+.cc_contents .btn_view_terms {position:relative; width:100%; height:44px; border-radius:3px; line-height:44px;}
+.cc_contents .btn_view_terms a {display:block; width:100%; height:100%; border-radius:3px; color:#fff; font-size:15px; font-weight:bold; text-align:center;}
+.cc_contents .btn_view_terms a:active {background-color:#464646;}
+
+@media(min-width:360px) {
+    .cc_contents .cc_box_ment {font-size:14px; line-height:20px;}
+}
+/*-----------------------------------------------------------------------*/
+/*-------------------------------- 정지/경고페이지 ------------------------------*/
+.warn_logo {position:relative; width:100%; height:200px; background:url("http://image.club7979.com/imgs/quick_talk/img01/jn_logo.png") center center no-repeat; background-size:215px 92px;}
+.warn_contents {position:relative; width:100%; height:auto; padding:0 6%; box-sizing:border-box;}
+.warn_contents h2 {color:#616060; font-size:22px; font-weight:bold; text-align:center;}
+.warn_contents .warn_ment {position:relative; width:100%; height:auto; padding:10px 0; padding-left:50px; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_exclam2.png") 10px center no-repeat; background-size:33px 33px; color:#4a4a4a; font-size:14px; font-weight:bold; text-align:left; line-height:22px; box-sizing:border-box;}
+.warn_contents .warn_ment span {color:#7c86e9;}
+.warn_contents .warn_box_ment {position:relative; width:100%; height:auto; padding:10px 26px; border:1px solid #e0d0ca; border-radius:3px; background:#fff; color:#4a4a4a; font-size:15px; text-align:left; line-height:32px; box-sizing:border-box;}
+.warn_contents .warn_box_ment span {padding-right:5px; font-weight:bold;}
+.warn_contents .warn_box_ment span.ft_s {font-size:12px; font-weight:normal;}
+.warn_contents .btn_warn {position:relative; width:100%; height:44px; margin-top:14px; border-radius:3px; line-height:44px;}
+.warn_contents .btn_warn a {display:block; width:100%; height:100%; border-radius:3px; color:#fff; font-size:15px; font-weight:bold; text-align:center;}
+.warn_contents .btn_warn a:active {background-color:#464646;}
+
+@media(min-width:360px) {
+    .warn_contents {width:314px; margin:0 auto; padding:0;}
+    .warn_contents h2 {font-size:24px;}
+    .warn_contents .warn_ment {padding-left:60px; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_exclam2.png") 14px center no-repeat; background-size:33px 33px; font-size:15px;}
+}
+/*-----------------------------------------------------------------------------*/
+/*----------------------------------- 이용약관 ---------------------------------*/
+.nav {position:relative; width:100%; height:40px; background:#fff; box-shadow:1px 1px 7px rgba(0,0,0,0.2); box-sizing:border-box;-webkit-box-shadow:1px 1px 7px rgba(0,0,0,0.2); -moz-box-shadow:1px 1px 7px rgba(0,0,0,0.2);}
+.nav .nav_u {float:left; width:100%; height:40px; padding:0 15px 0 0; white-space:nowrap;}
+.nav .nav_u .nav_l {float:left; width:33%; height:40px; text-align:center; white-space:nowrap; box-sizing:border-box;}
+.nav .nav_u .nav_l:nth-of-type(2) {margin:0 0.5%;}
+.nav .nav_u {display:inline-block; width:100%; height:38px; color:#4a4a4a; font-size:14px; font-weight:bold; text-align:center; line-height:40px;}
+.nav .nav_u .nav_l a {display:block; width:100%; height:100%;}
+.nav .nav_u .nav_l a:active {border-bottom:2px solid #ff5548; background:rgba(0,0,0,.03); box-sizing:border-box;}
+.tab_on1 {border-bottom:2px solid #ff5548; color:#ff5548;}
+/*-----------------------------------------------------------------------------*/

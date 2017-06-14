@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*-------------------------------- 보석내역보기 ------------------------------*/
+.jw_mine {position:relative; width:96%; height:45px; margin:0 auto; margin-top:2%; padding-left:34px; border-radius:3px; background:#4a4a4a url(http://image.club5678.com/imgs/quick_talk/img01/ico_jewel.png) 14px center no-repeat; background-size:15px 13px; color:#fff; font-size:15px; font-weight:bold; line-height:45px; box-sizing:border-box;}
+.jw_mine span {padding-left:5px; color:#f5ff52;}
+.jw_mine .btn_buy_jw {position:absolute; top:8px; right:6px; width:74px; height:auto;}
+.jw_mine .btn_buy_jw a {display:block; width:100%; height:100%; border-radius:3px; background:#ff5548; font-size:14px; text-align:center; line-height:30px;}
+.jw_mine .btn_buy_jw a:active {background:#f74e41;}
+.jw_lst_info {position:relative; padding:5px 4%; color:#757575; font-size:13px; box-sizing:border-box;}
+
+.jw_lst {position:relative; width:100%; height:auto; margin-top:136px; border:1px solid #f1f1f1;}
+.jw_lst .lst_all_dlt {position:relative; width:100%; height:auto; padding:5px 0 5px 14px; overflow:auto; box-sizing:border-box;}
+.jw_lst .lst_all_dlt .chk_all {float:left; width:20px; height:20px; margin-top:5px; padding-right:6px;}
+.jw_lst .lst_all_dlt .btn_slct_dlt {display:inline-block; float:right; width:70px; height:30px; margin-right:6px;}
+.jw_lst .lst_all_dlt .btn_slct_dlt a {display:block; width:100%; height:100%; font-size:14px; font-weight:bold; text-align:center; line-height:30px;}
+
+.jw_lst ul {position:relative; width:100%; height:auto; border-top:1px solid #d4d4d4;}
+.jw_lst ul li {position:relative; width:100%; height:auto; overflow:auto; border-bottom:1px solid #d1d1d1; line-height:44px;}
+.jw_lst ul li.lst_top {padding-left:14%; border-bottom:none; background:#f2f2f2; box-sizing:border-box;}
+.jw_lst ul li.lst_top .tit_lst {float:left; width:33%; height:auto; color:#686868; font-size:14px; font-weight:bold; text-align:center; line-height:30px;}
+.jw_lst ul li .chk_slct {float:left; width:14%; height:52px; padding:16px 0 16px 14px; line-height:52px; box-sizing:border-box;}
+.jw_lst ul li .info_day {float:left; width:28.6%; height:auto; padding:15px 0; font-size:14px; text-align:center; line-height:20px;}
+.jw_lst ul li .info_data {float:left; width:28.6%; height:auto; padding:15px 0; font-size:14px; text-align:center; line-height:20px;}
+.jw_lst ul li .info_jw_num {float:left; width:28.6%; height:auto; padding:15px 0; font-size:14px; text-align:center; line-height:20px;}
+.jw_lst ul li .minus {color:#f4435c;}
+.jw_lst ul li .plus {color:#35a0f3;}
+/*------------------------------------------------------------------------*/
