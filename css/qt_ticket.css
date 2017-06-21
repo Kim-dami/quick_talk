@@ -31,7 +31,7 @@ body {background-color:#f6f6f6;}
 .mycoin {position:relative; width:100%; height:auto; padding:17px 10px; box-sizing:border-box;}
 .mycoin .mycoin_bg {position:relative; width:100%; height:auto; padding:13px 0px; border:1px solid #d5d5d5; border-radius:5px; background-color:#fff; font-size:15px; font-weight:bold; text-align:center; line-height:23px; box-sizing:border-box;}
 .mycoin .mycoin_fix {display:inline-block; width:100px; text-align:left; vertical-align:middle;}
-.mycoin .mycoin_flex {display:inline-block; width:85px; text-align:right; vertical-align:middle;}
+.mycoin .mycoin_flex {display:inline-block; width:100px; text-align:right; vertical-align:middle;}
 .ticket_btn {position:relative; width:100%; height:auto; padding:0px 10px 10px 10px; box-sizing:border-box;}
 .ticket_btn:after {display:block; clear:both; content:"";}
 .ticket_btn .btn_cancle {float:left; width:46%; height:40px; border-radius:5px; background-color:#cecece; line-height:40px;}
@@ -48,6 +48,10 @@ h2 {position:relative; width:100%; height:40px; padding:0 20px; color:#777777; f
 .pay_wrap .radio_l {position:relative; width:100%; height:auto; border-bottom:1px solid #efefef;}
 .pay_wrap .radio_l:last-of-type {border-bottom:none;}
 .pay_wrap label {height:37px; color:#4a4a4a; font-size:14px; font-weight:bold; text-align:right; line-height:37px;}
+@media screen and (max-width:350px){
+	.pay_wrap label {font-size:13px;}
+}
+.pay_wrap label .label_coin{position:absolute; top:0; left:25px; width:auto; height:100%;}
 .pay_wrap .pay_l {position:relative; width:100%; height:auto; border-bottom:1px solid #efefef; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_pay_more.png") no-repeat right center; background-size:9px 15px;}
 .pay_wrap .pay_l:last-of-type {border-bottom:none;}
 .pay_wrap .pay_l a {display:block; width:100%; height:45px; padding-left:40px; color:#4a4a4a; font-size:14px; font-weight:bold; line-height:45px; box-sizing:border-box;}

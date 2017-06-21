@@ -10,7 +10,7 @@
 .jw_lst {position:relative; width:100%; height:auto; margin-top:136px; border:1px solid #f1f1f1;}
 .jw_lst .lst_all_dlt {position:relative; width:100%; height:auto; padding:5px 0 5px 14px; overflow:auto; box-sizing:border-box;}
 .jw_lst .lst_all_dlt .chk_all {float:left; width:20px; height:20px; margin-top:5px; padding-right:6px;}
-.jw_lst .lst_all_dlt .btn_slct_dlt {display:inline-block; float:right; width:70px; height:30px; margin-right:6px;}
+.jw_lst .lst_all_dlt .btn_slct_dlt {display:inline-block; float:left; width:70px; height:30px;}
 .jw_lst .lst_all_dlt .btn_slct_dlt a {display:block; width:100%; height:100%; font-size:14px; font-weight:bold; text-align:center; line-height:30px;}
 
 .jw_lst ul {position:relative; width:100%; height:auto; border-top:1px solid #d4d4d4;}

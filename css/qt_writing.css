@@ -10,12 +10,6 @@
 .photo_wrap .photo_clip img {display:block; width:100%; height:100%;}
 .photo_wrap .photo_change {position:absolute; z-index:10; right:-5px; bottom:-5px; width:26px; height:26px; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_photo_change.png") no-repeat center center; background-size:contain;}
 .photo_wrap .aprov_layer {position:absolute; z-index:10; top:2px; left:2px; width:61px; height:61px; border-radius:100%; background:rgba(0,0,0,0.5); color:#fff; font-size:14px; font-weight:bold; text-align:center; line-height:59px;}
-.photo_wrap .photo_layer {position:fixed; z-index:20; top:50%; left:50%; width:240px; height:150px; margin-top:-120px; margin-left:-120px; overflow:hidden; border-radius:5px; background-color:#fff; box-shadow:2px 2px 8px rgba(0,0,0,0.7);}
-.photo_wrap .photo_layer > div {position:relative; width:100%; height:50px; line-height:50px;}
-.photo_wrap .photo_layer > div:active {background:rgba(0,0,0,0.05);}
-.photo_wrap .photo_layer a {display:block; width:100%; height:100%; padding-left:57px; color:#707070; font-size:15px; font-weight:bold; box-sizing:border-box;}
-.photo_wrap .album a {border-bottom:1px solid #c9c9c9; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_photo_regi01.png") no-repeat 20px center; background-size:20px 21px;}
-.photo_wrap .camera a {border-bottom:1px solid #c9c9c9; background:url("http://image.club7979.com/imgs/quick_talk/img01/ico_photo_regi02.png") no-repeat 18px center; background-size:25px 19px;}
 
 /* 프로필 입력 */
 .input_wrap {position:relative; width:100%; height:76px; padding:0 16px 0 97px; box-sizing:border-box;}

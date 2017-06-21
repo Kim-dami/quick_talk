@@ -4,9 +4,9 @@ body {background-color:#f2f2f2;}
 .bg_white {background-color:#fff;}
 .mg_55 {margin-top:55px;}
 
-.tap_wrap {clear:both; width:100%; height:30px; background-color:#fff;}
+.tap_wrap {clear:both; width:100%; height:40px; background-color:#fff;}
 .tap_wrap ul {margin:0; padding:0;}
-.tap_wrap ul li {float:left; width:50%; list-style:none; font-size:12px; font-weight:bold; text-align:center; line-height:30px;}
+.tap_wrap ul li {float:left; width:50%; list-style:none; font-size:15px; font-weight:bold; text-align:center; line-height:40px;}
 .tap_wrap .tap_on {box-shadow:0 3px 3px rgba(86,92,161,100) inset; background:#7d86eb; -webkit-box-shadow:0 3px 3px rgba(86,92,161,100) inset; -o-box-shadow:0 3px 3px rgba(86,92,161,100) inset; -moz-box-shadow:0 3px 3px rgba(86,92,161,100) inset; -ms-box-shadow:0 3px 3px rgba(86,92,161,100) inset;}
 .tap_wrap .tap_off {box-shadow:inset 0px -1px 0px 0px rgba(125,134,235,1); -webkit-box-shadow:inset 0px -1px 0px 0px rgba(125,134,235,1); -moz-box-shadow:inset 0px -1px 0px 0px rgba(125,134,235,1);}
 .tap_wrap .tap_on a {color:#fff;}
@@ -23,26 +23,26 @@ body {background-color:#f2f2f2;}
 .withdraw_wrap .withdraw_tit_txt .main_txt {padding-left:24px; color:#515151; font-size:12px; font-weight:600;}
 .withdraw_wrap .withdraw_tit_txt .sub_txt {color:#c92828; font-size:11px; letter-spacing:-1px;}
 
-.money_exch_wrap {display:block; clear:both; width:90%; height:auto; margin:0 auto;}
+.money_exch_wrap {display:block; clear:both; width:95%; height:auto; margin:0 auto;}
 .money_exch_wrap .money_exch_box {width:100%; height:auto; overflow:hidden; border-radius:5px; background-color:#fff;}
 .money_exch_wrap .tap_money {margin:0; padding:0;}
 .money_exch_wrap .tap_money li {float:left; width:50%; height:25px; font-size:12px; font-weight:bold; text-align:center; line-height:25px;}
 .money_exch_wrap .tap_money .money_tap_on {background-color:#7c84e7; color:#fff;}
 .money_exch_wrap .tap_money .money_tap_off {background-color:#c4c4c4; color:#7f7f7f;}
-.money_exch_wrap .num_input_box {position:relative; width:100%; border-bottom-right-radius:5px; border-bottom-left-radius:5px; box-shadow:inset 0 0 0 1px rgba(124,132,231,1); -webkit-box-shadow:inset 0 0 0 1px rgba(124,132,231,1);}
+.money_exch_wrap .num_input_box { display:inline-block; position:relative; width:100%; border-bottom-right-radius:5px; border-bottom-left-radius:5px; box-shadow:inset 0 0 0 1px rgba(124,132,231,1); -webkit-box-shadow:inset 0 0 0 1px rgba(124,132,231,1);}
 
-.money_exch_wrap .jewel_exchange_box {float:left; width:33%; margin:10px 24px;}
+.money_exch_wrap .jewel_exchange_box {float:left; width:33%; margin:10px 0 10px 14%;}
 .money_exch_wrap .jewel_exchange_box p {color:#595959; font-size:12px; letter-spacing:-1px;}
-.money_exch_wrap .ex_money_num {width:85px; height:23px; margin-top:7px; padding:4px; border:1px solid #bdbdbd; outline:none; background-color:#fff; color:#595959; font-size:12px; text-align:right;}
-.money_exch_wrap .real_money_num {width:85px; height:23px; margin-top:7px; padding:4px; border:1px solid #9f9f9f; outline:none; background-color:#c7c7c7; color:red; font-size:12px; font-weight:bold; text-align:right;}
+.money_exch_wrap .ex_money_num {width:85px; height:32px; margin-top:7px; padding:4px; border:1px solid #bdbdbd; outline:none; background-color:#fff; color:#595959; font-size:15px; text-align:right;}
+.money_exch_wrap .real_money_num {width:85px; height:32px; margin-top:7px; padding:4px; border:1px solid #9f9f9f; outline:none; background-color:#c7c7c7; color:red; font-size:14px; font-weight:bold; text-align:right;}
 
 .money_exch_wrap .jewel_exchange_box ::-webkit-input-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
 .money_exch_wrap .jewel_exchange_box :-moz-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
 .money_exch_wrap .jewel_exchange_box ::-moz-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
 .money_exch_wrap .jewel_exchange_box :-ms-input-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
 .money_exch_wrap .withdraw_wrap .withdraw_btn_box .ico_jewel_arrow {display:inline-block; position:absolute; top:65px; left:50%; right:50%;}
-.money_exch_wrap .ico_jewel_arrow {position:absolute; top:47px; left:48%;}
-.money_exch_wrap .real_money_box {display:inline-block; float:right; width:33%; margin:10px 24px;}
+.money_exch_wrap .ico_jewel_arrow {position:absolute; top:38px; left:48%;}
+.money_exch_wrap .real_money_box {display:inline-block; float:right; width:33%; margin:10px 7% 10px 0;}
 .money_exch_wrap .real_money_box p {color:#515151; font-size:11px; letter-spacing:-1px;}
 .money_exch_wrap .real_money_box ::-webkit-input-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
 .money_exch_wrap .real_money_box :-moz-placeholder {color:#fc0000; font-size:12px; font-weight:bold; text-align:right;}
@@ -52,7 +52,7 @@ body {background-color:#f2f2f2;}
 .money_exch_wrap .real_money_box p {font-size:12px;}
 }
 
-.payment_info_wrap {display:block; clear:both; width:90%; height:auto; margin:0 auto; border:1px solid #7d86eb; border-radius:5px; background-color:#fff;}
+.payment_info_wrap {display:block; clear:both; width:95%; height:auto; margin:0 auto; border:1px solid #7d86eb; border-radius:5px; background-color:#fff;}
 .payment_info_box {padding:7px 10px;}
 .payment_info_box ul {display:block; width:100%; margin:0; margin-bottom:5px; padding:0;}
 .payment_info_box ul li {float:left;}
@@ -81,13 +81,21 @@ body {background-color:#f2f2f2;}
 .personal_info2 .txt_adress_add {display:inline-block; width:100%; height:30px; margin-top:5px; padding:5px 0 7px 0; border:1px solid #cbcbcb; border-radius:4px; background-color:#f6f6f6; box-sizing:border-box;}
 .personal_info2 .txt_adress_add input {width:100%; height:16px; padding:0 10px; border:none; background:none; font-size:14px; line-height:16px; letter-spacing:-1px;}
 
-.agree_wrap {display:block; position:relative; clear:both; width:90%; margin:0 auto; margin-bottom:80px;}
+.agree_wrap {display:block; position:relative; clear:both; width:90%; margin:0 auto; margin-bottom:55px;}
 .btn_agree_look {display:inline-block; width:100%; margin:5px 0; padding:9px 0; border-radius:3px; background-color:#c4c4c4; color:#4a4a4a; text-align:center; letter-spacing:-1px;}
 .agree_wrap a:active {background:rgba(0.0.0.0.1);}
 
-label.agree_chk_box1 {position:absolute; top:50px; width:100%; text-align:center;}
-label.agree_chk_box1 span {color:#722552; font-size:13px; font-weight:bold; letter-spacing:-1px;}
-label.agree_chk_box1 input {width:14px; height:14px; vertical-align:middle;}
+/* 체크박스_01 */
+.agree_wrap  .chk_lst01 {position:relative; width:100%; height:30px; padding:0 4px; text-align:center; line-height:30px; cursor:pointer; box-sizing:border-box;}
+.agree_wrap  .chk_lst01 input {position:absolute; z-index:5; top:0; left:0; opacity:0; cursor:pointer;}
+.agree_wrap  .chk_lst01 label {display:block; width:auto; height:auto; padding-bottom:3px; background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_off.png") no-repeat 28px center; background-size:20px 20px; font-size:12px; line-height:30px; cursor:pointer; box-sizing:border-box;}
+.agree_wrap  .chk_lst01 input:checked+label {background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_on.png") no-repeat 28px center; background-size:20px 20px;}
+.agree_wrap  .chk_lst01 span.btn_terms {position:absolute; top:0; right:4px; width:auto; height:auto; font-size:12px; font-weight:bold; line-height:30px;}
+.agree_wrap  .chk_lst01 span.btn_terms a:active {color:#ff5548;}
+@media (min-width:360px) {
+.agree_wrap  .chk_lst01 label {background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_off.png") no-repeat 40px center;  background-size:20px 20px;}
+.agree_wrap  .chk_lst01 input:checked+label {background:url("http://image.club7979.com/imgs/quick_talk/img01/chkbox01_on.png") no-repeat 40px center; background-size:20px 20px; }
+}
 
 .btn_signup {display:block; position:fixed; bottom:0; clear:both; width:100%; height:50px; background-color:#7d86eb; color:#fff; font-size:18px; font-weight:600; font-weight:bold; text-align:center; text-shadow:0px 0px 3px #000; line-height:46px;}
 
@@ -96,7 +104,7 @@ label.agree_chk_box1 input {width:14px; height:14px; vertical-align:middle;}
 .jw_lst {position:relative; width:100%; height:auto;}
 .jw_lst .lst_all_dlt {position:relative; width:100%; height:auto; padding:5px 0 5px 14px; overflow:auto; box-sizing:border-box;}
 .jw_lst .lst_all_dlt .chk_all {float:left; width:20px; height:20px; margin-top:5px; padding-right:6px;}
-.jw_lst .lst_all_dlt .btn_slct_dlt {display:inline-block; float:right; width:70px; height:30px; margin-right:6px;}
+.jw_lst .lst_all_dlt .btn_slct_dlt {display:inline-block; float:left; width:70px; height:30px; margin-right:6px;}
 .jw_lst .lst_all_dlt .btn_slct_dlt a {display:block; width:100%; height:100%; font-size:14px; font-weight:bold; text-align:center; line-height:30px;}
 
 .jw_lst ul {position:relative; width:100%; height:auto; border-top:1px solid #d4d4d4;}
@@ -118,7 +126,7 @@ label.agree_chk_box1 input {width:14px; height:14px; vertical-align:middle;}
 
 .table_notic {width:100%; height:35px; line-height:35px;}
 .table_notic span {padding-left:15px; color:#727272; font-size:13px; font-weight:600;}
-.table_notic .btn_check_del {display:inline-block; float:right; height:20px; margin:5px 10px 0 0; padding:2px 8px; border:1px solid #bababa; border-radius:3px; background-color:#fff; color:inherit; font-size:12px; line-height:20px; letter-spacing:-2px;}
+.table_notic .btn_check_del {display:inline-block; height:20px; margin:5px 10px 0 0; padding:2px 8px; border:1px solid #bababa; border-radius:3px; background-color:#fff; color:inherit; font-size:12px; line-height:20px; letter-spacing:-2px;}
 input[type=checkbox].cp_check_all {position:absolute; z-index:-1000; left:-1000px; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; border:0; clip:rect(0 0 0 0);}
 input[type=checkbox].cp_check_all {display:block; height:20px; background-repeat:no-repeat; background-position:0 0; vertical-align:middle;}
 input[type=checkbox].cp_check_all:checked + label {background-position:0 -20px;}
@@ -135,7 +143,7 @@ label.css-label_17 {background:url('http://image.club7979.com/imgs/quick_talk/im
 .table_man_call-head .column {display:table-cell; padding:10px 10px; border-right:1px solid #8d8d8d; border-bottom:1px solid #8d8d8d; font-size:12px; font-weight:700; text-align:center; vertical-align:middle; letter-spacing:-1px;}
 .column:nth-child(6) {border-right:none !important;}
 .h_row {display:table-row;}
-.row {display:table-row; color:#838383; font-size:11px; font-weight:400; letter-spacing:-1px;}
+.row {display:table-row; color:#838383; font-size:13px; font-weight:400; letter-spacing:-1px;}
 .row .column {display:table-cell; padding:10px 5px; border-right:1px solid #8d8d8d; border-bottom:1px solid #8d8d8d !important; text-align:center; vertical-align:middle;}
 .row .column:nth-child(6) {border-right:none !important;}
 .colum_ingtxt {color:#f4435c !important;}

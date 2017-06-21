@@ -228,8 +228,7 @@ td,th {padding:0;}
 /* cs_관리 관련 */
 
 .admin_badge { position:absolute; top:2px; left:-23px; }
-.cs_photo { width:20px; height:20px; position:relative; top:-37px; left:13px; }
-.cs_diy {width:20px; height:20px; position:relative; top:-37px; left:27px;  }
+.cs_photo { display:inline-block; width:55px; height:25px; position:relative; top:-43px; left:24px; }
 .cs_modify_pop { width:80%; height:auto; overflow:hidden;position:absolute; z-index:1000; top:50%; left:50%; width:92%; height:auto; overflow:hidden; background:#fff; box-shadow:1px 1px 20px rgba(0,0,0,0.7); transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); }
 .cs_modify_pop .txt_head { width:100%; height:30px; background:#7d85ea; color:#fff; font-size:15px; font-weight:bold; line-height:30px; padding-left:20px; }
 .cs_modify_pop .content_txt { width:100%; height:132px; overflow:hidden; position:relative; }
@@ -239,3 +238,10 @@ td,th {padding:0;}
 .cs_modify_pop .content_txt .btn_box { clear:both; display:block; width:100%; height:43px; margin:0; }
 .cs_modify_pop .content_txt .btn_box li { float:left; width:25%; display:inline-block; text-align:center; line-height:43px; }
 .cs_modify_pop .content_txt .btn_box li a { display:inline-block; width:80%; height:25px; line-height:25px; background-color:#7d85ea; color:#fff; border-radius:5px; font-size:12px; }
+
+/*
+ ** 서브탭 **
+          */
+.sub_tap {position:relative; width:100%; height:40px; line-height:40px;}
+.sub_tap > div {float:left; width:50%; height:100%; border-bottom:2px solid #4a4a4a; color:#777777; font-size:15px; font-weight:bold; text-align:center; cursor:pointer; box-sizing:border-box;}
+.sub_tap .tap_on {background-color:#4a4a4a; color:#fff;}
